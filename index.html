@@ -6,18 +6,72 @@
     <link rel="icon" href="#" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>VS Code Starting File</title>
+    <title>GridSync - Home</title>
     <link rel="stylesheet" href="./css/global/universal.css">
     <link rel="stylesheet" href="./css/global/header.css">
     <link rel="stylesheet" href="./css/global/footer.css">
+    <link rel="stylesheet" href="./css/global/header-alert.css">
     <link rel="stylesheet" href="./css/pages/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>   
+  <body>
+
+    <!-- Alert Section -->
+    <div class="header-alert">
+      <div class="wrapper slide-in-top">
+      <div>
+        <p class="heading">🔥 Join GridSync Plus Now!</p>
+        <p>Earn Points with every purchase.</p>
+      </div>
+      <a href="./directory/pages/gridsync-plus.html" aria-label="Join GridSync Plus"></a>
+      <button class="close-alert" aria-label="close alert"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+     <header>
+      <div class="wrapper">
+        <!-- Header Top Section -->
+        <div class="header__top">
+          <a href="./index.html" class="logo">Grid<span>Sync</span></a>
+          <form>
+            <label for="search" class="visually-hidden">Search</label>
+            <input type="text" placeholder="What are you looking for?" required id="search">
+            <div class="connector">
+              <!-- Form Category -->
+              <div class="form-category">
+                <button type="button" class="selected-category">All categories <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="form-category__listing">
+                  <button class="default option" type="button">All categories</button>
+                  <div class="category-label">
+                    <div class="category-dash"></div>
+                      <p>Categories</p>
+                    <div class="category-dash"></div>
+                  </div>
+                  <button class="option" type="button">Gaming</button>
+                  <button class="option" type="button">Software</button>
+                  <button class="option" type="button">Gift cards</button>
+                  <button class="option" type="button">Subscriptions</button>
+                  <button class="option" type="button">E-Learning</button>
+                  <button class="option" type="button">Charity</button>
+                  <button class="option" type="button">Mobile Games</button>
+                </div>
+              </div>
+              <button type="submit" aria-label="search" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+          <nav>
+            <a href="./404.html" aria-label="wishlist"><i class="fa-solid fa-heart"></i></a>
+            <a href="./404.html" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          </nav>
+        </div>
+      </div>
+     </header>
     
-    <script src=""></script>
+    <script src="javascript/global/header-alert.js"></script>
+    <script src="javascript/global/form-category__listing.js"></script>
   </body>
 
 </html>

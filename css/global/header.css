@@ -1,0 +1,147 @@
+header {
+    background: #000;
+    color: #fff;
+}
+header *:not(form) {
+    color: inherit;
+}
+/* Header Top Section */
+header .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--heading-font-family);
+    padding: .5rem 1rem;
+
+    &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: -6px;
+    }
+}
+header .logo span {
+    color: #9fc0ff;
+    font-family: inherit;
+}
+header .header__top form {
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    max-width: 30rem;
+    width: 100%;
+}
+header .header__top form input {
+    border: none;
+    padding-inline: .5rem;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid hsl(0, 0%, 80%);
+    flex: 1;
+
+    &:hover, &:focus-visible {
+        outline: none;
+        background: hsl(0,0%,95%);
+    }
+}
+header .header__top form .search-btn {
+    width: 3rem;
+    background: #2f82fb;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+
+    &:focus-visible, &:active {
+        outline: 3px solid #fff;
+        outline-offset: -6px;       
+    }
+}
+
+header .header__top nav {
+    display: flex;
+    height: 100%;
+}
+header .header__top nav a {
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    aspect-ratio: 1/1;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: rgba(255,255,255,.15);
+    }
+    &:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: -6px;       
+    }
+}
+header .header__top form .connector {
+    display: flex;
+    position: relative;
+}
+header .header__top form .selected-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+    padding-inline: .5rem;
+    width: 10rem;
+    background: #fff;
+    color: hsl(0, 0%, 40%);
+    font-size: .85rem;
+
+    &:hover, &:focus-visible {
+        outline: none;
+        background: hsl(0,0%,95%);
+    }
+}
+header .header__top form .selected-category i {
+    font-size: .5rem;
+}
+header .header__top .form-category__listing {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transform: translateY(calc(100% + 3px));
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding-block: .5rem;
+    color: hsl(0, 0%, 40%);
+    font-size: .85rem;
+    box-shadow: var(--box-shadow);
+    display: none;
+}
+header .header__top .form-category__listing * {
+    color: inherit;
+    font-size: inherit;
+}
+header .header__top .form-category__listing button {
+    padding: .5rem 1rem;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+        background: rgba(0,0,0,.05);
+    }
+}
+header .header__top .form-category__listing .active {
+    background: rgba(0,0,0,.05);
+}
+header .header__top .category-label {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    margin-block: 1rem;
+}
+header .header__top .category-dash {
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    margin-inline: .5rem;
+}
