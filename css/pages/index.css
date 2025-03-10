@@ -1,0 +1,18 @@
+main .hero {
+    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)) ,url("../../images/pages/index/index-hero-banner.webp");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.showcasing-card:nth-child(1) {
+    background-image: url("../../images/pages/index/beastslayer-wild-hunt.webp");
+}
+.showcasing-card:nth-child(2) {
+    background-image: url("../../images/pages/index/blades-of-the-fallen-sun.webp");
+}
+.showcasing-card:nth-child(3) {
+    background-image: url("../../images/pages/index/best-rpg-games.webp");
+}
+.showcasing-card:nth-child(4) {
+    background-image: url("../../images/pages/index/blockforge-realm-of-legends.webp");
+}
