@@ -25,7 +25,7 @@ header .logo {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: var(--heading-font-family);
+    font-family: "Figtree", sans-serif;
     padding: .5rem 1rem;
     height: 100%;
     transition: font-size .2s ease-in-out;
@@ -339,16 +339,11 @@ header .mobile-links__grouping a {
         text-decoration: underline;
     }
 }
-
-header .mobile-links__grouping a:nth-child(5) {
-    background: linear-gradient(90deg,#4A00E0, #8E2DE2);
+header .mobile-links__grouping a.cta {
+    background-image: linear-gradient(90deg,#4A00E0, #8E2DE2);
     text-align: center;
     border-radius: 100vw;
     margin-top: 1rem;
-}
-
-header .mobile-links__grouping a:nth-child(5) {
-    background: linear-gradient(90deg,#4A00E0, #8E2DE2);
 
     &:hover {
         text-decoration: none;
@@ -385,8 +380,8 @@ header .header__bottom a {
     }
 }
 
-header .header__bottom a:nth-child(5) {
-    background: linear-gradient(90deg,#4A00E0, #8E2DE2);
+header .header__bottom a.cta {
+    background-image: linear-gradient(90deg,#4A00E0, #8E2DE2);
 }
 
 /* Media Queries */

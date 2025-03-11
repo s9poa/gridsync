@@ -1,18 +1,178 @@
 main .hero {
-    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)) ,url("../../images/pages/index/index-hero-banner.webp");
+    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)) ,url("../../images/pages/index/index-hero-banner.avif");
     background-size: cover;
     background-position: bottom;
 }
+main .hero .wrapper {
+    padding: 2rem 1rem;
+}
 
-.showcasing-card:nth-child(1) {
+.showcasing-card.beastslayer-wild-hunt {
     background-image: url("../../images/pages/index/beastslayer-wild-hunt.webp");
 }
-.showcasing-card:nth-child(2) {
+.showcasing-card.blades-of-the-fallen-sun {
     background-image: url("../../images/pages/index/blades-of-the-fallen-sun.webp");
 }
-.showcasing-card:nth-child(3) {
+.showcasing-card.best-rpg-games {
     background-image: url("../../images/pages/index/best-rpg-games.webp");
 }
-.showcasing-card:nth-child(4) {
+.showcasing-card.blockforge-realm-of-legends {
     background-image: url("../../images/pages/index/blockforge-realm-of-legends.webp");
+}
+/* Choose Your Platform section */
+main .choose-your-platform {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+main .choose-your-platform .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main .choose-your-platform .header nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 31.25rem;
+    width: 100%;
+}
+main .choose-your-platform .header .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border: 1px solid #cccccc;
+    height: 3rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    transition: background .2s ease-in-out, transform .2s ease-in-out;
+    flex-grow: 1;
+
+
+    &:hover, &:active, &:focus-visible {
+        transform: translateY(-5px);
+    }
+    &:hover, &:active {
+        background: hsl(0, 0%, 95%);
+    }
+    &:active {
+        outline: 2px solid #000;
+        outline-offset: -1;
+    }
+}
+main .choose-your-platform .header img {
+    max-width: 1.5rem;
+    min-width: 1.5rem;
+    width: 100%;
+}
+
+/* Choose Your Platform - QR Container */
+main .choose-your-platform .qr-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: #212121;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+main .choose-your-platform .qr-container * {
+    color: #fff;
+}
+main .choose-your-platform .qr-bg {
+    display: grid;
+    place-items: center;
+    background: #fff;
+    padding: 1rem;
+    flex-grow: 1;
+}
+main .choose-your-platform .qr-bg img {
+    max-width: 5rem;
+    min-width: 5rem;
+    width: 100%;
+}
+main .choose-your-platform .qr-container a {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,.05);
+    box-shadow: var(--box-shadow);
+
+    &:hover {
+        background: rgba(255,255,255,.1);
+        border-color: #fff;
+    }
+}
+main .choose-your-platform .qr-container a i {
+    display: grid;
+    place-items: center;
+    max-width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.1);
+    font-size: 1rem;
+    box-shadow: var(--box-shadow);
+}
+main .choose-your-platform .qr-container a h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    max-width: 18rem;
+    width: 100%;
+}
+main .choose-your-platform .qr-container a p {
+    opacity: .5;
+    max-width: 14rem;
+    width: 100%;
+}
+
+/* Choose Your Platform - General Links */
+main .choose-your-platform .general-links {
+    border-radius: 100vw;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .choose-your-platform .general-links a.first {
+    border-radius: 100vw 0 0 100vw;
+    border-right: 1px solid #cccccc;
+}
+main .choose-your-platform .general-links a.middle {
+    border-inline: 1px solid #cccccc;
+}
+main .choose-your-platform .general-links a.last {
+    border-radius: 0 100vw 100vw 0;
+    border-left: 1px solid #cccccc;
+}
+main .choose-your-platform .general-links a {
+    flex-grow: 2;
+    height: 100%;
+    display: grid;
+    padding-inline: 1rem;
+    place-items: center;
+    height: 3rem;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+        background: hsl(0, 0%, 95%);
+    }
+}
+
+@media (max-width: 1200px) {
+    main .choose-your-platform .general-links {
+        border-radius: 0;
+        gap: 1rem;
+        border: none;
+    }
+    main .choose-your-platform .general-links a {
+        border-radius: 0 !important;
+        border: 1px solid #cccccc;
+    }
 }

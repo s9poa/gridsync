@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 /*--Flat Icons--*/
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
@@ -89,7 +90,6 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
     gap: 1rem;
-    padding: 2rem 1rem;
 }
 
 /* Card Layouts */
@@ -134,10 +134,10 @@ button {
     width: fit-content;
 }
 .showcasing-card .tab.new-release {
-    background: hsl(159, 68%, 30%);
+    background-image: linear-gradient(180deg, hsl(159, 68%, 40%), hsl(159, 68%, 20%));
 }
 .showcasing-card .tab.best-seller {
-    background: hsl(18, 100%, 40%);
+    background-image: linear-gradient(180deg, hsl(18, 100%, 60%), hsl(18, 100%, 40%));
 }
 .showcasing-card .title {
     text-transform: uppercase;

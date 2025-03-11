@@ -1,5 +1,5 @@
 .header-alert {
-    background: linear-gradient(90deg,#4A00E0, #8E2DE2);
+    background-image: linear-gradient(90deg,#4A00E0, #8E2DE2);
     position: relative;
 }
 .header-alert .wrapper {
