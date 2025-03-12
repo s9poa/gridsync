@@ -1,5 +1,4 @@
 main .hero {
-    background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)) ,url("../../images/pages/index/index-hero-banner.avif");
     background-size: cover;
     background-position: center;
 }
