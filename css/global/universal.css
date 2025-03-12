@@ -1,11 +1,7 @@
 /*--Fonts--*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
-/*--Flat Icons--*/
-@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
     font-size: 16px;
@@ -14,6 +10,8 @@
     --lt-txt-clr: #fff;
     --dk-body-clr: hsla(217, 21%, 12%, 1);
     --lt-body-clr: #fff;
+
+    --blue: #2f82fb;
 
     /* Sizing */
     --padding-sm: .5rem;
@@ -84,7 +82,35 @@ button {
     margin-inline: auto;
 }
 
-.four-col-layout {
+.beastslayer-wild-hunt {
+    background-image: url("../../images/global/beastslayer-wild-hunt.avif");
+}
+.blades-of-the-fallen-sun {
+    background-image: url("../../images/global/blades-of-the-fallen-sun.avif");
+}
+.best-rpg-games {
+    background-image: url("../../images/global/best-rpg-games.avif");
+}
+.blockforge-realm-of-legends {
+    background-image: url("../../images/global/blockforge-realm-of-legends.avif");
+}
+.rise-of-the-infected {
+    background-image: url("../../images/global/rise-of-the-infected.avif");
+}
+.echoes-of-rust {
+    background-image: url("../../images/global/echoes-of-rust.avif");
+}
+.blade-of-the-ancients {
+    background-image: url("../../images/global/blade-of-the-ancients.avif");
+}
+.the-forgotten-gate {
+    background-image: url("../../images/global/the-forgotten-gate.webp");
+}
+.shadowborn {
+    background-image: url("../../images/global/shadowborn.webp");
+}
+
+.showcasing-card-grid {
     --grid-min-col-size: 275px;
     
     display: grid;
@@ -92,13 +118,22 @@ button {
     gap: 1rem;
 }
 
+.mini-card-grid {
+    --grid-min-col-size: 200px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+    gap: 1rem;
+    position: relative;
+}
+
 /* Card Layouts */
-.showcasing-card * {
+.showcasing-card *, .mini-card * {
     color: #fff;
     position: relative;
     z-index: 1;
 }
-.showcasing-card {
+.showcasing-card, .mini-card {
     border-radius: 10px;
     height: 27.5rem;
     position: relative;
@@ -113,7 +148,7 @@ button {
         transform: translateY(-5px);
     }
 }
-.showcasing-card::before {
+.showcasing-card::before, .mini-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -150,6 +185,30 @@ button {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+
+.mini-card {
+    height: 20rem;
+    overflow: hidden;
+}
+.mini-card h3 {
+    font-size: 1rem;
+}
+.mini-card .price {
+    font-weight: 900;
+    position: absolute;
+    top: 22px;
+    left: -53px;
+    background: rgba(0,0,0,.9);
+    width: 12.5rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+    color: #11FFBD;
+}
+
+
 
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {
@@ -547,5 +606,18 @@ button {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 475px) {
+    .mini-card-grid, .showcasing-card-grid {
+        display: flex;
+        overflow: auto;
+    }
+    .mini-card-grid .mini-card {
+        min-width: 90%;
+    }
+    .showcasing-card-grid .showcasing-card {
+        min-width: 90%;
     }
 }

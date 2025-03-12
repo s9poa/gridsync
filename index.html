@@ -2,19 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="#" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="#" media="(prefers-color-scheme: light)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./css/global/universal.css" as="style">
+    <link rel="preload" href="./css/global/header.css" as="style">
+    <link rel="preload" href="./css/pages/index.css" as="style">
+    <link rel="preload" href="https://kit.fontawesome.com/75f6cf5fe8.js" as="script" crossorigin="anonymous">
+
     <title>GridSync - Home</title>
+
+    <!-- Essential SEO Meta Tags -->
+    <meta name="description" content="GridSync - Your go-to platform for gaming, software, and digital gift cards. Find the best deals and exclusive offers.">
+    <meta property="og:title" content="GridSync - Home">
+    <meta property="og:description" content="Get the best gaming deals, software discounts, and gift cards on GridSync.">
+    <meta property="og:url" content="https://s9poa.github.io/gridsync/">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/global/universal.css">
     <link rel="stylesheet" href="./css/global/header.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
     <link rel="stylesheet" href="./css/global/footer.css">
     <link rel="stylesheet" href="./css/global/header-alert.css">
-    <link rel="stylesheet" href="./css/pages/index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 
   <body>
 
@@ -131,7 +148,7 @@
       <!-- Hero Section -->
        <section class="hero">
         <!-- Card Column Layout -->
-        <div class="wrapper four-col-layout">
+        <div class="wrapper showcasing-card-grid">
           <a href="./404.html" class="showcasing-card beastslayer-wild-hunt">
             <span class="tab new-release">New Release</span>
             <h2 class="title">Beastslayer: Wild Hunt</h2>
@@ -213,7 +230,41 @@
             <a href="./404.html">Gaming gift cards</a>
             <a href="./404.html" class="last">Random Keys</a>
           </nav>
+
+          <!-- Best Sellers Section -->
+          <div class="best-sellers-header">
+            <div>
+              <h2>Best Sellers</h2>
+              <a href="./404.html">Discover all</a>
+            </div>
+            <p>The hottest items on our marketplace - discover what captured our users' hearts!</p>
+          </div>
+
+          <!-- Mini Card Grid -->
+          <div class="mini-card-grid">
+            <a href="./404.html" class="mini-card blockforge-realm-of-legends">
+              <h3>BlockForge: Realm of Legends</h3>
+              <span class="price">$19.99</span>
+            </a>
+            <a href="./404.html" class="mini-card echoes-of-rust">
+              <h3>Echoes of Rust</h3>
+              <span class="price">$34.99</span>
+            </a>
+            <a href="./404.html" class="mini-card rise-of-the-infected">
+              <h3>Rise of the Infected</h3>
+              <span class="price">$49.99</span>
+            </a>
+            <a href="./404.html" class="mini-card blade-of-the-ancients">
+              <h3>Blade of the Ancients</h3>
+              <span class="price">$39.99</span>
+            </a>
+            <a href="./404.html" class="mini-card shadowborn">
+              <h3>Shadowborn</h3>
+              <span class="price">$39.99</span>
+            </a>
+          </div>
         </section>
+
      </main>
 
     <script src="javascript/global/header/header-mobile-menu.js"></script>

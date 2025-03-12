@@ -1,23 +1,11 @@
 main .hero {
     background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)) ,url("../../images/pages/index/index-hero-banner.avif");
     background-size: cover;
-    background-position: bottom;
-}
-main .hero .wrapper {
-    padding: 2rem 1rem;
+    background-position: center;
 }
 
-.showcasing-card.beastslayer-wild-hunt {
-    background-image: url("../../images/pages/index/beastslayer-wild-hunt.webp");
-}
-.showcasing-card.blades-of-the-fallen-sun {
-    background-image: url("../../images/pages/index/blades-of-the-fallen-sun.webp");
-}
-.showcasing-card.best-rpg-games {
-    background-image: url("../../images/pages/index/best-rpg-games.webp");
-}
-.showcasing-card.blockforge-realm-of-legends {
-    background-image: url("../../images/pages/index/blockforge-realm-of-legends.webp");
+main .hero .wrapper {
+    padding: 2rem 1rem;
 }
 /* Choose Your Platform section */
 main .choose-your-platform {
@@ -37,7 +25,7 @@ main .choose-your-platform .header nav {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    max-width: 31.25rem;
+    max-width: 35rem;
     width: 100%;
 }
 main .choose-your-platform .header .nav-item {
@@ -164,6 +152,26 @@ main .choose-your-platform .general-links a {
         background: hsl(0, 0%, 95%);
     }
 }
+
+/* Best Sellers Section */
+main .best-sellers-header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+main .best-sellers-header a {
+    color: blue;
+    text-decoration: underline;
+
+    &:active, &:focus-visible {
+        outline: 2px solid #000;
+        outline-offset: 4px;
+    }
+}
+
+/* Best Sellers Section - Mini Card Grid */
+
 
 @media (max-width: 1200px) {
     main .choose-your-platform .general-links {
