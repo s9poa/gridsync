@@ -19,14 +19,11 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/global/universal.css">
-    <link rel="stylesheet" href="./css/global/header.css">
     <link rel="stylesheet" href="./css/pages/index.css">
-    <link rel="stylesheet" href="./css/global/footer.css">
 
     <!-- Favicon -->
     <link rel="icon" href="#" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="#" media="(prefers-color-scheme: light)">
-
 
 </head>
 
@@ -131,7 +128,7 @@
      
      <main>
       <!-- Hero Section -->
-       <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/pages/index/index-hero-banner.avif');">
+       <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/index/index-hero-banner.avif');">
         <!-- Card Column Layout -->
         <div class="wrapper showcasing-card-grid">
           <a href="./404.html" class="showcasing-card beastslayer-wild-hunt">
@@ -154,27 +151,32 @@
             <p class="subheading">Forge Your Path, Conquer the Unknown, and Unleash Legendary Power!</p>
           </a>
         </div>
+        <div class="previous-next-container">
+          <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
        </section>
 
        <!-- Choose Your Platform section -->
-        <section class="choose-your-platform wrapper">
+        <section class="choose-your-platform">
+          <div class="wrapper one">
           <div class="header">
             <h2 class="section-title">Choose your platform</h2>
             <nav>
               <a href="./404.html" class="nav-item">
-                <img src="./images/pages/index/monitor.svg" width="24px" alt="PC icon">
+                <img src="./images/index/monitor.svg" width="24px" height="24px" alt="PC icon">
                 <span>PC</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/pages/index/xbox-logo.svg" width="24px" alt="Xbox icon">
+                <img src="./images/index/xbox-logo.svg" width="24px" height="24px" alt="Xbox icon">
                 <span>Xbox</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/pages/index/playstation-logotype.svg" width="24px" alt="Playstation icon">
+                <img src="./images/index/playstation-logotype.svg" width="24px" height="24px" alt="Playstation icon">
                 <span>Playstation</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/pages/index/nintendo-switch.svg" width="24px" alt="Nintendo icon">
+                <img src="./images/index/nintendo-switch.svg" width="24px" height="24px" alt="Nintendo icon">
                 <span>Nintendo</span>
               </a>
             </nav>
@@ -182,7 +184,7 @@
           <!-- Choose Your Platform - QR Container -->
           <div class="qr-container">
             <div class="qr-bg">
-              <img src="./images/pages/index/qr-code.webp" width="80px" alt="qr code">
+              <img src="./images/index/qr-code.webp" width="80px" height="80px" alt="qr code">
             </div>
             <a href="./404.html">
               <i class="fa-solid fa-lock-open"></i>
@@ -224,9 +226,12 @@
             </div>
             <p>The hottest items on our marketplace - discover what captured our users' hearts!</p>
           </div>
+        </div>
 
+
+          <div class="mini-card-container">
           <!-- Mini Card Grid -->
-          <div class="mini-card-grid">
+          <div class="mini-card-grid wrapper">
             <a href="./404.html" class="mini-card blockforge-realm-of-legends">
               <h3>BlockForge: Realm of Legends</h3>
               <span class="price">$19.99</span>
@@ -248,6 +253,11 @@
               <span class="price">$39.99</span>
             </a>
           </div>
+          <div class="previous-next-container">
+            <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
         </section>
 
      </main>
@@ -255,6 +265,7 @@
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
     <script src="javascript/global/header/header-mobile-menu.js"></script>
+    <script src="javascript/global/mobile-arrow-control.js"></script>
     <script src="javascript/global/header/form-category__listing.js"></script>
   </body>
 
