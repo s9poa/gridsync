@@ -227,30 +227,35 @@
             <p>The hottest items on our marketplace - discover what captured our users' hearts!</p>
           </div>
         </div>
+        </section>
 
-
-          <div class="mini-card-container">
+        <div class="mini-card-container">
           <!-- Mini Card Grid -->
           <div class="mini-card-grid wrapper">
             <a href="./404.html" class="mini-card blockforge-realm-of-legends">
               <h3>BlockForge: Realm of Legends</h3>
               <span class="price">$19.99</span>
+              <div class="bg blockforge-realm-of-legends"></div>
             </a>
             <a href="./404.html" class="mini-card echoes-of-rust">
               <h3>Echoes of Rust</h3>
               <span class="price">$34.99</span>
+              <div class="bg echoes-of-rust"></div>
             </a>
             <a href="./404.html" class="mini-card rise-of-the-infected">
               <h3>Rise of the Infected</h3>
               <span class="price">$49.99</span>
+              <div class="bg rise-of-the-infected"></div>
             </a>
-            <a href="./404.html" class="mini-card blade-of-the-ancients">
+            <a href="./404.html" class="mini-card">
               <h3>Blade of the Ancients</h3>
               <span class="price">$39.99</span>
+              <div class="bg blade-of-the-ancients"></div>
             </a>
-            <a href="./404.html" class="mini-card shadowborn">
+            <a href="./404.html" class="mini-card">
               <h3>Shadowborn</h3>
               <span class="price">$39.99</span>
+              <div class="bg shadowborn"></div>
             </a>
           </div>
           <div class="previous-next-container">
@@ -258,15 +263,51 @@
             <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
+
+        <!-- Flash Deal Section -->
+        <section class="flash-deal-section" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url(./images/index/flash-deal-bg.avif);">
+          <div class="wrapper">
+            <div class="flash-deal">
+              <h2>Flash Deal</h2>
+              <div class="timer">
+                <span class="ticker hours"></span>
+                <span class="colon" aria-hidden="true">:</span>
+                <span class="ticker minutes"></span>
+                <span class="colon" aria-hidden="true">:</span>
+                <span class="ticker seconds"></span>
+              </div>
+              <div class="img eclipse-requiem">
+                <span class="save-tab">Save $1.80</span>
+              </div>
+              <h3 class="title">Eclipse Requiem</h3>
+              <div class="left-available-container">
+                <div class="labels">
+                  <p>Left <span>20</span></p>
+                  <p>Sold <span>0</span></p>
+                </div>
+                <div class="progress-bar"></div>
+              </div>
+              <div class="footer">
+                <div>
+                  <span class="current-price">$18.24</span>
+                  <div class="row">
+                    <p class="original-price">$20.00</p>
+                    <span class="discount">9% Discount</span>
+                  </div>
+                </div>
+                <button class="add-to-cart" aria-label="add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
         </section>
 
      </main>
 
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
     <script src="javascript/global/header/header-mobile-menu.js"></script>
     <script src="javascript/global/mobile-arrow-control.js"></script>
     <script src="javascript/global/header/form-category__listing.js"></script>
+    <script src="javascript/pages/flash-deal-timer.js"></script>
+    <script src="https://kit.fontawesome.com/75f6cf5fe8.js" crossorigin="anonymous"></script>
   </body>
 
 </html>
