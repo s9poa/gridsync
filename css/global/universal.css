@@ -607,6 +607,11 @@ main .mini-card-container {
     height: 20rem;
     overflow: hidden;
     background: hsl(0, 0%, 25%);
+
+    &:focus-visible {
+        outline: 3px solid #000;
+        outline-offset: 4px;
+    }
 }
 .mini-card h3 {
     font-size: 1rem;

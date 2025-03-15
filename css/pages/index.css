@@ -184,7 +184,8 @@ main .flash-deal-section {
 main .flash-deal-section .wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
+    gap: 1rem;
 }
 main .flash-deal-section .flash-deal {
     display: flex;
@@ -195,6 +196,7 @@ main .flash-deal-section .flash-deal {
     border-radius: 20px;
     background-image: linear-gradient(180deg, hsla(258, 76%, 93%, 1), hsla(258, 76%, 80%, 1), hsla(258, 75%, 62.5%, 1));
     color: #000;
+    margin-left: 1rem;
 }
 main .flash-deal-section .flash-deal * {
     color: inherit;
@@ -287,7 +289,7 @@ main .flash-deal .footer {
     justify-content: space-between;
     width: 100%;
     color: #fff;
-
+    gap: 1rem;
 }
 main .flash-deal .footer .row {
     display: flex;
@@ -321,8 +323,85 @@ main .flash-deal .add-to-cart {
     border-radius: 50%;
     outline: 2px solid #fff;
     outline-offset: -6px;
-}
 
+    &:focus-visible {
+        outline-offset: 3px;
+    }
+}
+main .currently-trending-offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    grid-column: span 2;
+}
+main .currently-trending-offers .previous-next-container {
+    padding: 0;
+    display: none;
+}
+main .currently-trending-offers * {
+    color: inherit;
+}
+main .currently-trending-offers .labels {
+    text-align: center;
+}
+main .currently-trending-offers .labels h2 {
+    font-size: 2rem;
+}
+main .currently-trending-offers .grid {
+    --grid-min-col-size: 300px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-block: 1rem;
+}
+main .currently-trending-offers .item {
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    outline: 2px solid #222;
+    outline-offset: -6px;
+    backdrop-filter: blur(5px);
+    transition: transform .2s ease-in-out;
+
+    &:focus-visible, &:active {
+        outline-color: hsl(0, 0%, 50%);    
+    }
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+main .currently-trending-offers .item .sponsored {
+    text-transform: uppercase;
+    opacity: .75;
+}
+main .currently-trending-offers .item .sponsored i {
+    opacity: .5;
+}
+main .currently-trending-offers .item .content {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+main .currently-trending-offers .item .img {
+    height: 10rem;
+    width: 7.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+main .currently-trending-offers .item .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .currently-trending-offers .item .content > div .pricing {
+    font-size: 2rem;
+    font-weight: 900;
+}
 
 
 @media (max-width: 1200px) {
@@ -335,5 +414,91 @@ main .flash-deal .add-to-cart {
         border-radius: 0 !important;
         border: 1px solid #cccccc;
     }
+    main .currently-trending-offers .previous-next-container {
+        display: flex;
+        padding-right: 1rem;
+    }
+    main .currently-trending-offers .grid {
+        display: flex;
+        overflow: hidden;
+        padding-right: 1rem;
+    }
+    main .currently-trending-offers .item {
+        min-width: 400px;
+    }
+    main .flash-deal-section .wrapper {
+        padding-right: 0;
+    }
 }
 
+@media (max-width: 1000px) {
+    main .flash-deal-section .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1rem;
+    }
+    main .flash-deal {
+        height: fit-content;
+        width: 100%;
+    }
+    main .currently-trending-offers .labels h2 {
+        font-size: 1.5rem;
+    }
+    main .flash-deal .footer {
+        flex-wrap: wrap;
+    }
+    main .currently-trending-offers .grid {
+        flex-direction: column;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    main .currently-trending-offers .previous-next-container {
+        display: none;
+    }
+    main .flash-deal .img {
+        height: 20rem;
+    }
+    main .currently-trending-offers .item {
+        min-width: 400px;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+}
+
+@media (max-width: 770px) {
+    main .flash-deal-section .wrapper {
+        flex-direction: column;
+    }
+    main .flash-deal {
+        width: auto;
+        margin-right: 1rem;
+    }
+    main .currently-trending-offers .grid {
+        flex-direction: row;
+        padding-inline: 1rem;
+        padding-bottom: 1rem;
+    }
+    main .currently-trending-offers .previous-next-container {
+        display: flex;
+        padding-left: 1rem;
+    }
+    main .currently-trending-offers .labels {
+        padding-right: 1rem;
+    }
+    main .flash-deal-section .wrapper {
+        padding-right: 0;
+    }
+}
+@media (max-width: 600px) {
+    main .currently-trending-offers .item {
+        min-width: 90%;
+    }
+}
+@media (max-width: 410px) {
+    main .flash-deal .add-to-cart {
+        display: none;
+    }
+}
