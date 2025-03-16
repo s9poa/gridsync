@@ -129,28 +129,28 @@
      
      <main>
       <!-- Hero Section -->
-       <section class="hero">
+       <section class="hero lazy-bg" data-bg="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/index/index-hero-banner.avif');">
         <!-- Card Column Layout -->
         <div class="wrapper showcasing-card-grid">
-          <a href="./404.html" class="showcasing-card" data-bg="./images/global/beastslayer-wild-hunt.avif">
+          <a href="./404.html" class="showcasing-card lazy-bg" data-bg="background-image: url(./images/global/beastslayer-wild-hunt.avif)">
             <span class="tab new-release">New Release</span>
             <h2 class="title">Beastslayer: Wild Hunt</h2>
             <p class="subheading">Survive the Wilds. Hunt the Beasts. Claim Your Legacy</p>
           </a>
-          <a href="./404.html" class="showcasing-card" data-bg="./images/global/blades-of-the-fallen-sun.avif">
+          <a href="./404.html" class="showcasing-card lazy-bg" data-bg="background-image: url(./images/global/blades-of-the-fallen-sun.avif)">
             <span class="tab new-release">New Release</span>
             <h2 class="title">Blades of the Fallen Sun</h2>
             <p class="subheading">Honor and Shadows Collide in the Battle for Japan's Fate</p>
           </a>
-          <a href="./404.html" class="showcasing-card" data-bg="./images/global/best-rpg-games.avif">
+          <a href="./404.html" class="showcasing-card lazy-bg" data-bg="background-image: url(./images/global/best-rpg-games.avif)">
             <span class="tab best-seller">Best Seller</span>
             <h2 class="title">Best RPG Games</h2>
           </a>
-          <a href="./404.html" class="showcasing-card" data-bg="./images/global/blockforge-realm-of-legends.avif">
+          <a href="./404.html" class="showcasing-card lazy-bg" data-bg="background-image: url(./images/global/blockforge-realm-of-legends.avif)">
             <span class="tab best-seller">Best Seller</span>
             <h2 class="title">BlockForge: Realm of Legends</h2>
             <p class="subheading">Forge Your Path, Conquer the Unknown, and Unleash Legendary Power!</p>
-          </a>          
+          </a>
         </div>
         <div class="previous-next-container">
           <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
@@ -233,30 +233,30 @@
         <div class="mini-card-container">
           <!-- Mini Card Grid -->
           <div class="mini-card-grid wrapper">
-            <a href="./404.html" class="mini-card blockforge-realm-of-legends">
+            <a href="./404.html" class="mini-card">
               <h3>BlockForge: Realm of Legends</h3>
               <span class="price">$19.99</span>
-              <div class="bg blockforge-realm-of-legends"></div>
+              <div class="bg lazy-bg" data-bg="background-image: url(./images/global/blockforge-realm-of-legends.avif)"></div>
             </a>
-            <a href="./404.html" class="mini-card echoes-of-rust">
+            <a href="./404.html" class="mini-card">
               <h3>Echoes of Rust</h3>
               <span class="price">$34.99</span>
-              <div class="bg echoes-of-rust"></div>
+              <div class="bg lazy-bg" data-bg="background-image: url(./images/global/echoes-of-rust.avif)"></div>
             </a>
             <a href="./404.html" class="mini-card rise-of-the-infected">
               <h3>Rise of the Infected</h3>
               <span class="price">$49.99</span>
-              <div class="bg rise-of-the-infected"></div>
+              <div class="bg lazy-bg" data-bg="background-image: url(./images/global/rise-of-the-infected.avif)"></div>
             </a>
             <a href="./404.html" class="mini-card">
               <h3>Blade of the Ancients</h3>
               <span class="price">$39.99</span>
-              <div class="bg blade-of-the-ancients"></div>
+              <div class="bg lazy-bg" data-bg="background-image: url(./images/global/blade-of-the-ancients.avif)"></div>
             </a>
             <a href="./404.html" class="mini-card">
               <h3>Shadowborn</h3>
               <span class="price">$39.99</span>
-              <div class="bg shadowborn"></div>
+              <div class="bg lazy-bg" data-bg="background-image: url(./images/global/shadowborn.avif)"></div>
             </a>
           </div>
           <div class="previous-next-container">
@@ -266,7 +266,7 @@
         </div>
 
         <!-- Flash Deal Section -->
-        <section class="flash-deal-section" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url(./images/index/flash-deal-bg.avif);">
+        <section class="flash-deal-section lazy-bg" data-bg="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url(./images/index/flash-deal-bg.avif);">
           <div class="wrapper">
             <div class="flash-deal">
               <h2>Flash Deal</h2>
@@ -277,7 +277,7 @@
                 <span class="colon" aria-hidden="true">:</span>
                 <span class="ticker seconds"></span>
               </div>
-              <div class="img eclipse-requiem">
+              <div class="img lazy-bg" data-bg="background-image: url(./images/global/eclipse-requiem.avif)">
                 <span class="save-tab">Save $1.80</span>
               </div>
               <h3 class="title">Eclipse Requiem</h3>
@@ -416,7 +416,7 @@
       </div>
      </footer>
 
-    <script src="javascript/pages/index-hero-preload.js"></script>
+    <script src="javascript/global/lazyload.js"></script>
     <script src="javascript/global/header/header-mobile-menu.js"></script>
     <script src="javascript/global/mobile-arrow-control.js"></script>
     <script src="javascript/global/header/form-category__listing.js"></script>

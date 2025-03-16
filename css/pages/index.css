@@ -1,5 +1,4 @@
 main .hero {
-    background-color: #000; /* Placeholder before the image loads */
     background-size: cover;
     background-position: center;
     display: flex;
