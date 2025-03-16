@@ -1,4 +1,5 @@
 main .hero {
+    background-color: #000; /* Placeholder before the image loads */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -356,6 +357,7 @@ main .currently-trending-offers .grid {
     gap: 1rem;
     padding-right: 1rem;
     padding-block: 1rem;
+    overflow: auto;
 }
 main .currently-trending-offers .item {
     background: rgba(0,0,0,.6);
@@ -420,7 +422,6 @@ main .currently-trending-offers .item .content > div .pricing {
     }
     main .currently-trending-offers .grid {
         display: flex;
-        overflow: hidden;
         padding-right: 1rem;
     }
     main .currently-trending-offers .item {
@@ -490,6 +491,9 @@ main .currently-trending-offers .item .content > div .pricing {
     }
     main .flash-deal-section .wrapper {
         padding-right: 0;
+    }
+    main .currently-trending-offers .labels {
+        padding-inline: 1rem;
     }
 }
 @media (max-width: 600px) {

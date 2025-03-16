@@ -8,6 +8,7 @@
     <!-- Preload Critical Resources -->
     <link rel="preload" href="./css/global/universal.css" as="style">
     <link rel="preload" href="./css/pages/index.css" as="style">
+    <link rel="preload" as="image" href="./images/index/index-hero-banner.avif" type="image/avif">
 
     <title>GridSync - Home</title>
 
@@ -128,7 +129,7 @@
      
      <main>
       <!-- Hero Section -->
-       <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/index/index-hero-banner.avif');">
+       <section class="hero">
         <!-- Card Column Layout -->
         <div class="wrapper showcasing-card-grid">
           <a href="./404.html" class="showcasing-card beastslayer-wild-hunt">
@@ -415,6 +416,7 @@
       </div>
      </footer>
 
+    <script src="javascript/pages/index-hero-preload.js"></script>
     <script src="javascript/global/header/header-mobile-menu.js"></script>
     <script src="javascript/global/mobile-arrow-control.js"></script>
     <script src="javascript/global/header/form-category__listing.js"></script>
