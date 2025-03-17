@@ -67,6 +67,7 @@ header {
     background: #000;
     color: #fff;
     position: relative;
+    height: 8.5rem;
 }
 header .wrapper {
     display: flex;
@@ -461,8 +462,35 @@ header .header__bottom a.cta {
     margin-inline: auto;
 }
 
-.lazy-bg {
-    background: #000;
+.beastslayer-wild-hunt {
+    background-image: url("../../images/global/beastslayer-wild-hunt.avif");
+}
+.blades-of-the-fallen-sun {
+    background-image: url("../../images/global/blades-of-the-fallen-sun.avif");
+}
+.best-rpg-games {
+    background-image: url("../../images/global/best-rpg-games.avif");
+}
+.blockforge-realm-of-legends {
+    background-image: url("../../images/global/blockforge-realm-of-legends.avif");
+}
+.rise-of-the-infected {
+    background-image: url("../../images/global/rise-of-the-infected.avif");
+}
+.echoes-of-rust {
+    background-image: url("../../images/global/echoes-of-rust.avif");
+}
+.blade-of-the-ancients {
+    background-image: url("../../images/global/blade-of-the-ancients.avif");
+}
+.the-forgotten-gate {
+    background-image: url("../../images/global/the-forgotten-gate.webp");
+}
+.shadowborn {
+    background-image: url("../../images/global/shadowborn.avif");
+}
+.eclipse-requiem {
+    background-image: url("../../images/global/eclipse-requiem.avif");
 }
 
 .showcasing-card-grid {
@@ -537,9 +565,6 @@ main .mini-card-container {
     &:hover, &:focus-visible, &:active {
         transform: translateY(-5px);
     }
-}
-.showcasing-card.lazy-bg, .mini-card.lazy-bg {
-    background: rgba(255,255,255,.05);
 }
 .showcasing-card::before, .mini-card::before {
     content: '';
@@ -878,6 +903,9 @@ footer .marquee__content > * {
     }
     header .logo {
         font-size: 1.2rem;
+    }
+    header {
+        height: 4.5rem;
     }
 }
 @media (min-width: 900px) {
