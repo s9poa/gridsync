@@ -65,12 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
       footerContainer.innerHTML = footerHTML;
     }
   
-    // Convert relative URLs (starting with "./") to root-relative URLs.
-    var footerAnchors = document.querySelectorAll("footer a");
-    for (var i = 0, len = footerAnchors.length; i < len; i++) {
-      var href = footerAnchors[i].getAttribute("href");
+    var anchors = document.querySelectorAll("footer a");
+    for (var i = 0, len = anchors.length; i < len; i++) {
+      var href = anchors[i].getAttribute("href");
       if (href && href.indexOf("./") === 0) {
-        footerAnchors[i].setAttribute("href", "/" + href.substring(2));
+        anchors[i].setAttribute("href", "/" + href.substring(2));
       }
     }
   });

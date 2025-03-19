@@ -373,7 +373,7 @@ main .currently-trending-offers .item {
         outline-color: hsl(0, 0%, 50%);    
     }
     &:hover {
-        transform: scale(1.02);
+        transform: translateY(-5px);
     }
 }
 main .currently-trending-offers .item .sponsored {
@@ -391,7 +391,8 @@ main .currently-trending-offers .item .content {
 main .currently-trending-offers .item .img {
     height: 10rem;
     width: 7.5rem;
-    background: rgba(255,255,255,0.1);
+    background-position: center;
+    background-size: cover;
     border-radius: 10px;
 }
 main .currently-trending-offers .item .content > div {

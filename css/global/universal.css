@@ -492,6 +492,18 @@ header .header__bottom a.cta {
 .eclipse-requiem {
     background-image: url("../../images/global/eclipse-requiem.avif");
 }
+.saga-of-the-fallen-gods {
+    background-image: url("../../images/global/saga-of-the-fallen-gods.avif");
+}
+.eclipse-warfront {
+    background-image: url("../../images/global/eclipse-warfront.avif");
+}
+.nocturnal-descent {
+    background-image: url("../../images/global/nocturnal-descent.avif");
+}
+.melody-quest {
+    background-image: url("../../images/global/melody-quest.avif");
+}
 
 .showcasing-card-grid {
     --grid-min-col-size: 275px;
