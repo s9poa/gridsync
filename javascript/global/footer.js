@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Determine the base path for GitHub Pages.
+  // If you are hosted as a project page (e.g. username.github.io/repositoryName),
+  // the repository name is the first segment of the pathname.
   let basePath = "";
   if (window.location.hostname.includes("github.io")) {
     const pathParts = window.location.pathname.split('/');
@@ -74,11 +76,12 @@ document.addEventListener("DOMContentLoaded", function() {
     footerContainer.innerHTML = footerHTML;
   }
 
-  // Update footer links starting with "./" to include the proper base path.
+  // Update links starting with "./" to use the absolute path with the base path.
   var anchors = document.querySelectorAll("footer a");
-  for (var i = 0, len = anchors.length; i < len; i++) {
+  for (var i = 0; i < anchors.length; i++) {
     var href = anchors[i].getAttribute("href");
     if (href && href.indexOf("./") === 0) {
+      // Prepend the basePath to the link
       anchors[i].setAttribute("href", basePath + "/" + href.substring(2));
     }
   }
