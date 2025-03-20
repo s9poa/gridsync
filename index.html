@@ -38,8 +38,12 @@
      <main>
       <!-- Hero Section -->
        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('./images/index/index-hero-banner.avif');">
+        <div class="previous-next-container">
+          <button class="previous-card white-focus" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next-card white-focus" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
         <!-- Card Column Layout -->
-        <div class="wrapper showcasing-card-grid">
+        <div class="wrapper showcasing-card-grid overflow-slider">
           <a href="./404.html" class="showcasing-card" style="background-image: url(./images/global/beastslayer-wild-hunt.avif)">
             <span class="tab new-release">New Release</span>
             <h2 class="title">Beastslayer: Wild Hunt</h2>
@@ -60,32 +64,28 @@
             <p class="subheading">Forge Your Path, Conquer the Unknown, and Unleash Legendary Power!</p>
           </a>
         </div>
-        <div class="previous-next-container">
-          <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
-          <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
        </section>
 
        <!-- Choose Your Platform section -->
         <section class="choose-your-platform">
           <div class="wrapper one">
           <div class="header">
-            <h2 class="section-title">Choose your platform</h2>
+            <h2>Choose your platform</h2>
             <nav>
               <a href="./404.html" class="nav-item">
-                <img src="./images/index/monitor.svg" width="24px" height="24px" alt="PC icon">
+                <img src="./images/index/monitor.svg" width="24" height="24" alt="PC icon">
                 <span>PC</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/index/xbox-logo.svg" width="24px" height="24px" alt="Xbox icon">
+                <img src="./images/index/xbox-logo.svg" width="24" height="24" alt="Xbox icon">
                 <span>Xbox</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/index/playstation-logotype.svg" width="24px" height="24px" alt="Playstation icon">
+                <img src="./images/index/playstation-logotype.svg" width="24" height="24" alt="Playstation icon">
                 <span>Playstation</span>
               </a>
               <a href="./404.html" class="nav-item">
-                <img src="./images/index/nintendo-switch.svg" width="24px" height="24px" alt="Nintendo icon">
+                <img src="./images/index/nintendo-switch.svg" width="24" height="24" alt="Nintendo icon">
                 <span>Nintendo</span>
               </a>
             </nav>
@@ -93,7 +93,7 @@
           <!-- Choose Your Platform - QR Container -->
           <div class="qr-container">
             <div class="qr-bg">
-              <img src="./images/index/qr-code.webp" width="80px" height="80px" alt="qr code">
+              <img src="./images/index/qr-code.webp" width="80" height="80" alt="qr code">
             </div>
             <a href="./404.html">
               <i class="fa-solid fa-lock-open"></i>
@@ -140,7 +140,11 @@
 
         <div class="mini-card-container">
           <!-- Mini Card Grid -->
-          <div class="mini-card-grid wrapper">
+          <div class="previous-next-container">
+            <button class="previous-card black-focus" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next-card black-focus" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="mini-card-grid wrapper overflow-slider">
             <a href="./404.html" class="mini-card">
               <h3>BlockForge: Realm of Legends</h3>
               <span class="price">$19.99</span>
@@ -166,10 +170,6 @@
               <span class="price">$39.99</span>
               <div class="bg" style="background-image: url(./images/global/shadowborn.avif)"></div>
             </a>
-          </div>
-          <div class="previous-next-container">
-            <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -212,7 +212,13 @@
                 <h2>Trending offers</h2>
                 <p>Don't miss out - grab them while you still have the chance!</p>
               </div>
-              <div class="grid">
+              <div class="column">
+                <div class="previous-next-container">
+                  <button class="previous-card white-focus" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
+                  <button class="next-card white-focus" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+              <div class="grid overflow-slider">
                 <a href="./404.html" class="item">
                   <p class="sponsored">Offers From 7 Sellers</p>
                     <div class="content">
@@ -254,10 +260,8 @@
                     </div>
                   </a>
               </div>
-              <div class="previous-next-container">
-                <button class="previous-card" aria-label="previous"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="next-card" aria-label="next"><i class="fa-solid fa-arrow-right"></i></button>
-              </div>
+
+            </div>
             </div>
           </div>
         </section>

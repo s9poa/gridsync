@@ -1,0 +1,203 @@
+main.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+main .section-title {
+    max-width: 60ch;
+    width: 100%;
+}
+/* Memberships Section */
+main .membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main .membership > *:not(.column-reverse) {
+    padding-inline: 1rem;
+}
+main .membership > p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+main .membership-grid {
+    --grid-min-col-size: 350px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+    gap: 2rem;
+    width: 100%; 
+    overflow: auto;
+    padding: 2rem 1rem;
+}
+main .membership .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+main .membership-card * {
+    pointer-events: none;
+}
+main .membership-card {
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+main .membership-card .img {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(180deg, hsl(253, 57%, 50%), hsl(253, 57%, 10%));
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+main .membership-card .img::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: hsl(253, 57%, 50%);
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    filter: blur(20px);
+    animation: membership-pulse-effect 5s linear infinite;
+}
+@keyframes membership-pulse-effect {
+    0% {
+        filter: blur(20px);
+    }
+    50% {
+        filter: blur(40px);
+    }
+}   
+main .membership-card .img * {
+    z-index: 1;
+    position: relative;
+}
+main .membership-card .img .logo {
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-family: "Figtree", sans-serif;
+}
+main .membership-card .img .logo span {
+    color: inherit;
+    font-family: inherit;
+}
+main .membership-card .img .membership-rank {
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    animation: bounce 5s linear infinite;
+}
+main .membership-card .img .membership-rank.one {
+    opacity: .33;
+}
+main .membership-card .img .membership-rank.two {
+    opacity: .66;
+}
+main .membership-card .img .membership-rank.three {
+    opacity: .99;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0%) rotate(45deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+}
+main .membership-card .img .membership-rank i {
+    color: #fff;
+    font-size: 2rem;
+    transform: rotate(-45deg);
+}
+main .membership-card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+main .membership-card .divider {
+    height: 1px;
+    background: #EAEAEA;
+}
+main .membership-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+}
+main .membership-card li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+main .membership-card li i {
+    align-self: flex-start;
+    margin-top: 5px;
+    color: rgb(98, 2, 234);
+}
+main .membership-card .pricing {
+    font-weight: 900;
+    font-size: 2rem;
+}
+main .membership-card .sub-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main .membership-card .sub-footer p {
+    text-transform: uppercase;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: 700;
+    opacity: .7;
+}
+main .membership-card .sub-footer p i {
+    font-size: .8rem;
+}
+main .membership-card .membership-btn {
+    background: hsl(217, 90%, 59%);
+    color: #fff;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 100vw;
+    pointer-events: visible;
+
+    &:focus-visible {
+        outline: 2px solid #000;
+        outline-offset: 4px;
+    }
+}
+
+@media (max-width: 770px) {
+    main .membership-grid {
+        display: flex;
+        gap: 2rem;
+    }
+    main .previous-next-container {
+        display: flex;
+    }
+    main .membership-card {
+        min-width: 90%;
+    }
+}

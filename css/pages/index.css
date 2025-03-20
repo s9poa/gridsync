@@ -2,7 +2,7 @@ main .hero {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding-bottom: 2rem;
 }
 
@@ -319,13 +319,24 @@ main .flash-deal .add-to-cart {
     height: 3rem;
     display: grid;
     place-items: center;
-    background: #45a247;
+    background: hsl(121, 40%, 45%);
     border-radius: 50%;
     outline: 2px solid #fff;
     outline-offset: -6px;
 
     &:focus-visible {
         outline-offset: 3px;
+        border-radius: 5px;
+        animation: add-to-cart-focus 2s linear infinite;
+        background: hsl(121, 40%, 40%);
+    }
+}
+@keyframes add-to-cart-focus {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-5px);
     }
 }
 main .currently-trending-offers {
@@ -334,6 +345,10 @@ main .currently-trending-offers {
     justify-content: flex-end;
     color: #fff;
     grid-column: span 2;
+}
+main .currently-trending-offers .column {
+    display: flex;
+    flex-direction: column-reverse;
 }
 main .currently-trending-offers .previous-next-container {
     padding: 0;
@@ -370,7 +385,7 @@ main .currently-trending-offers .item {
     transition: transform .2s ease-in-out;
 
     &:focus-visible, &:active {
-        outline-color: hsl(0, 0%, 50%);    
+        outline-color: hsl(0, 0%, 90%);    
     }
     &:hover {
         transform: translateY(-5px);

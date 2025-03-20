@@ -165,8 +165,8 @@ header .header__top nav a:not(.mobile-links__grouping a), header .header__top .m
         background: rgba(255,255,255,.15);
     }
     &:focus-visible, &:active {
-        outline: 3px solid #fff;
-        outline-offset: -6px;     
+        outline: 2px solid #fff;
+        outline-offset: -2px;     
         background: rgba(255,255,255,.15);  
     }
 }
@@ -510,7 +510,7 @@ header .header__bottom a.cta {
     
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-    gap: 1rem;
+    gap: 2rem 1rem; 
 }
 
 .mini-card-grid {
@@ -518,7 +518,7 @@ header .header__bottom a.cta {
     
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
-    gap: 1rem;
+    gap: 2rem 1rem;
     position: relative;
     padding-top: 2rem;
     padding-inline: 1rem;
@@ -526,7 +526,7 @@ header .header__bottom a.cta {
 
 main .mini-card-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
     padding-bottom: 2rem;
 }
@@ -550,8 +550,17 @@ main .mini-card-container {
     transition: transform .5ms ease-in-out;
 
     &:focus-visible, &:active {
-        transform: scale(.90)
+        transform: scale(.90);
     }
+    &:focus-visible {
+        outline-offset: 4px;
+    }
+}
+.previous-next-container button.black-focus:focus-visible {
+    outline: 3px solid #000;
+}
+.previous-next-container button.white-focus:focus-visible {
+    outline: 3px solid #fff;
 }
 .previous-next-container button i {
     color: inherit;
@@ -575,7 +584,7 @@ main .mini-card-container {
     transition: transform .2s ease-in-out;
 
     &:hover, &:focus-visible, &:active {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
 }
 .showcasing-card::before, .mini-card::before {
@@ -737,6 +746,10 @@ footer .publishing-services a {
 
     &:hover {
         background: hsl(0, 0%, 10%);
+    }
+    &:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: -4px;
     }
 }
 footer .publishing-services i {
