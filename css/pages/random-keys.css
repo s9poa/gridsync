@@ -1,0 +1,151 @@
+main {
+    padding-block: 2rem;
+}
+main .hero.wrapper {
+    padding-inline: 1rem;
+}
+main .banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: hsl(265, 98%, 46%);
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+main .banner::before {
+    position: absolute;
+    content: '';
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: radial-gradient(hsla(265, 98%, 75%, .25) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+main .banner * {
+    color: #fff;
+    z-index: 2;
+}
+main .banner .icon-container {
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+}
+main .banner i {
+    transform: rotate(-45deg);
+}
+main .banner a {
+    background: #000;
+    height: 3rem;
+    padding-inline: 2rem;
+    align-content: center;
+    margin-left: auto;
+    font-weight: 700;
+    border-radius: 100vw;
+
+    &:focus-visible, &:active {
+        outline: 3px solid #fff;
+        outline-offset: -6px;
+    }
+}
+
+/* Bento Grid */
+main .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    overflow: scroll;
+    padding: 2rem 1rem;
+}
+main .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+main .bento-grid * {
+    color: #fff;
+}
+main .bento-grid > * {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 20rem;
+    padding: 1rem;
+    position: relative;
+    transition: transform .2s ease-in-out;
+
+    &:hover, &:focus-visible, &:active {
+        transform: translateY(-10px);
+    }
+    &:focus-visible {
+        outline: 3px solid #000;
+        outline-offset: 6px;
+    }
+}
+main .bento-grid .box-1 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.25), transparent), url("../../images/random-keys/box-1.avif");
+}
+main .bento-grid .box-2 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.25), transparent), url("../../images/random-keys/box-2.avif");
+}
+main .bento-grid .box-3 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.25), transparent), url("../../images/random-keys/box-3.avif");
+}
+main .bento-grid .box-4 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.25), transparent), url("../../images/random-keys/box-4.avif");
+}
+main .bento-grid .box-5 {
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.25), transparent), url("../../images/random-keys/box-5.avif");
+}
+main .bento-grid .col-span-2 {
+    grid-column: span 2;
+}
+main .bento-grid h2 {
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+main .bento-grid .tab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 20px 0 20px;
+    padding: .5rem 2rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--blue);
+}
+main .column-reverse .previous-next-container {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    main .banner {
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 1rem;
+    }
+    main .banner a {
+        margin: auto;
+    }
+    main .bento-grid {
+        display: flex;
+    }
+    main .bento-grid .col-span-2 {
+        grid-column: auto;
+    }
+    main .bento-grid > * {
+        min-width: 90%;
+    }
+    main .column-reverse .previous-next-container {
+        display: flex;
+    }
+}

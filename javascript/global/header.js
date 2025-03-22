@@ -114,8 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <nav class="header__bottom">
           <a href="./404.html">Best Sellers</a>
           <a href="./404.html">Steam Gift Cards</a>
-          <a href="./404.html">Random Keys</a>
-          <a href="./404.html">Software</a>
+          <a href="./directory/pages/random-keys.html">Random Keys</a>
           <a href="./directory/pages/gridsync-plus.html" class="cta">Save more with GridSync Plus</a>
         </nav>
       `;
