@@ -3,11 +3,8 @@ main .hero {
     background-position: center;
     display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 2rem;
-}
-
-main .hero .wrapper {
-    padding: 2rem 1rem 0 1rem;
+    gap: 0;
+    padding: 0;
 }
 /* Choose Your Platform section */
 main .choose-your-platform .wrapper.one {
@@ -433,7 +430,7 @@ main .currently-trending-offers .item .content > div .pricing {
     }
     main .currently-trending-offers .previous-next-container {
         display: flex;
-        padding-right: 1rem;
+        padding-inline: 1rem;
     }
     main .currently-trending-offers .grid {
         display: flex;
@@ -452,6 +449,7 @@ main .currently-trending-offers .item .content > div .pricing {
         display: flex;
         justify-content: space-between;
         padding-right: 1rem;
+        padding-bottom: 0;
     }
     main .flash-deal {
         height: fit-content;
@@ -509,6 +507,7 @@ main .currently-trending-offers .item .content > div .pricing {
     }
     main .currently-trending-offers .labels {
         padding-inline: 1rem;
+        margin-top: 1rem;
     }
 }
 @media (max-width: 600px) {

@@ -2,7 +2,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-block: 2rem;
+}
+main .plan-header-labels {
+    margin-top: 2rem;
 }
 main .section-title {
     max-width: 60ch;
@@ -32,9 +34,7 @@ main .membership .column-reverse {
     display: flex;
     flex-direction: column-reverse;
 }
-main .membership .column-reverse .previous-next-container {
-    padding-bottom: 2rem;
-}
+
 main .membership-card * {
     pointer-events: none;
 }

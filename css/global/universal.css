@@ -593,8 +593,9 @@ header .header__bottom a.cta {
 main .mini-card-container {
     display: flex;
     flex-direction: column-reverse;
-    gap: 1rem;
-    padding-bottom: 2rem;
+}
+main .overflow-slider {
+    padding: 2rem 1rem !important;
 }
 
 .previous-next-container {
@@ -605,6 +606,7 @@ main .mini-card-container {
     width: 100%;
     margin-inline: auto;
     padding-inline: 1rem;
+    margin-bottom: 2rem;
     display: none;
 }
 .previous-next-container button {
@@ -1032,9 +1034,6 @@ footer .marquee__content > * {
     }
     main .hero {
         gap: 1rem;
-    }
-    main .hero .wrapper {
-        padding-bottom: 0 !important;
     }
     .previous-next-container {
         display: flex;
