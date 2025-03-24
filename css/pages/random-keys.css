@@ -161,6 +161,74 @@ main .bg-bleed::after {
     height: 100%;
     background-image: linear-gradient(to bottom, #fff, transparent);
 }
+main .payment-methods {
+    background: #000;
+}
+main .payment-methods * {
+    color: #fff;
+    pointer-events: none;
+    font-size: 1rem;
+}
+main .payment-methods .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem 1rem;
+}
+main .payment-methods .title, main .payment-methods .more {
+    opacity: .5;
+    font-weight: 400;
+    font-family: var(--assistant);
+    min-width: max-content;
+}
+main .payment-methods .item {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    opacity: .5;
+    width: max-content;
+}
+main .payment-methods .item span {
+    font-weight: 900;
+}
+main .payment-methods .item i {
+    font-size: 1.5rem;
+}
+main .payment-methods .marquee {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 1rem;
+    max-width: 30rem;
+    width: 100%;
+}
+main .payment-methods .marquee::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0,0,0,1), transparent, transparent, rgba(0,0,0,1));
+    z-index: 2;
+  }
+  main .payment-methods .marquee__content {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 20s linear infinite;
+  }
+  main .payment-methods .marquee__content span {
+    font-family: system-ui, sans-serif;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
 
 @media (max-width: 900px) {
     main .banner {
@@ -171,8 +239,12 @@ main .bg-bleed::after {
     main .banner a {
         margin: auto;
     }
-    main .bento-grid {
+    main .bento-grid, main .mini-card-grid {
         display: flex;
+        overflow: auto;
+    }
+    main .mini-card-grid a {
+        min-width: 90%;
     }
     main .bento-grid .col-span-2 {
         grid-column: auto;
@@ -182,5 +254,11 @@ main .bg-bleed::after {
     }
     main .previous-next-container {
         display: flex;
+    }
+}
+
+@media (max-width: 770px) {
+    main .payment-methods .wrapper {
+        flex-direction: column;
     }
 }
