@@ -1021,16 +1021,16 @@ footer .marquee__content > * {
         justify-content: flex-start;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .mini-card-grid, .showcasing-card-grid {
         display: flex;
         overflow: auto;
     }
     .mini-card-grid .mini-card {
-        min-width: 90%;
+        min-width: 70%;
     }
     .showcasing-card-grid .showcasing-card {
-        min-width: 90%;
+        min-width: 70%;
     }
     main .hero {
         gap: 1rem;

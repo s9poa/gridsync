@@ -199,8 +199,8 @@ main .payment-methods .marquee {
     display: flex;
     overflow: hidden;
     user-select: none;
-    gap: 1rem;
-    max-width: 30rem;
+    gap: 8rem;
+    max-width: 100%;
     width: 100%;
 }
 main .payment-methods .marquee::before {
@@ -215,18 +215,20 @@ main .payment-methods .marquee::before {
   }
   main .payment-methods .marquee__content {
     display: flex;
-    gap: 1rem;
-    animation: scroll 20s linear infinite;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    gap: 8rem;
+    animation: scrollpayment 20s linear infinite;
   }
   main .payment-methods .marquee__content span {
-    font-family: system-ui, sans-serif;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   }
-  @keyframes scroll {
+  @keyframes scrollpayment {
     from {
       transform: translateX(0);
     }
     to {
-      transform: translateX(calc(-100% - 1rem));
+      transform: translateX(calc(-100% - 8rem));
     }
   }
 
@@ -244,20 +246,20 @@ main .payment-methods .marquee::before {
         overflow: auto;
     }
     main .mini-card-grid a {
-        min-width: 90%;
+        min-width: 70%;
     }
     main .bento-grid .col-span-2 {
         grid-column: auto;
     }
     main .bento-grid > * {
-        min-width: 90%;
+        min-width: 70%;
     }
     main .previous-next-container {
         display: flex;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 400px) {
     main .payment-methods .wrapper {
         flex-direction: column;
     }
