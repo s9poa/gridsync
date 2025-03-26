@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Preload Critical Resources -->
+
+    <title>GridSync - Gift Cards</title>
+
+    <!-- Essential SEO Meta Tags -->
+    <meta name="description" content="GridSync - Your go-to platform for gaming. Find the best deals and exclusive offers.">
+    <meta property="og:title" content="GridSync - Gift Cards">
+    <meta property="og:description" content="Get the best gaming deals on GridSync.">
+    <meta property="og:url" content="https://s9poa.github.io/gridsync/">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/global/universal.css">
+    <link rel="stylesheet" href="../../css/pages/gift-cards.css">
+    <link rel="stylesheet" href="../../attributions/fontawesome/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="#" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="#" media="(prefers-color-scheme: light)">
+
+</head>
+
+  <body>
+    <header>
+      <div id="header"></div>
+    </header>
+
+    <main class="wrapper">
+      <section class="title-section">
+        <div>
+            <h2>Gift Cards</h2>
+            <p>740 items</p>
+        </div>
+        <div>
+            <label for="sort-by">Sort By</label>
+            <select id="sort-by">
+                <option selected disabled hidden>Choose a Filter</option>
+                <option>A - Z</option>
+            </select>
+        </div>
+      </section>
+
+
+      <section class="grid">
+        <div class="left-grid-item">
+            <div class="categories">
+                <h3>Categories</h3>
+                <button class="open-dialog-box">PSN <span aria-hidden="true">701</span></button>
+                <button class="open-dialog-box">XBOX Live <span aria-hidden="true">169</span></button>
+                <button class="open-dialog-box">Nintendo eShop <span aria-hidden="true">161</span></button>
+                <button class="open-dialog-box">Blizzard <span aria-hidden="true">35</span></button>
+                <button class="open-dialog-box">Steam <span aria-hidden="true">740</span></button>
+                <button class="show-more-less show-more-a">Show more <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="show-more-b show-less-b">
+                    <button class="open-dialog-box">Other <span aria-hidden="true">605</span></button>
+                    <button class="open-dialog-box">Valorant <span aria-hidden="true">202</span></button>
+                    <button class="open-dialog-box">Razer Gold <span aria-hidden="true">408</span></button>
+                    <button class="open-dialog-box">Roblox <span aria-hidden="true">300</span></button>
+                    <button class="open-dialog-box">Twitch <span aria-hidden="true">74</span></button>
+                </div>
+                <button class="show-more-less show-less-a">Show less <i class="fa-solid fa-chevron-up"></i></button>
+            </div>
+            <div class="availability">
+                <h3>Availability</h3>
+                <form>
+                    <div class="reuse-div">
+                        <input type="checkbox" id="available-in-states">
+                        <label for="available-in-states">Items available in United States</label>
+                    </div>
+                    <div class="reuse-div">
+                        <input type="checkbox" id="items-in-stock">
+                        <label for="items-in-stock">Items in stock<span>371</span></label>
+                    </div>
+                </form>
+            </div>
+            <div class="platform border-bottom">
+                <h3>Platform</h3>
+                <form>
+                    <div class="reuse-div">
+                        <input type="checkbox" id="platform-steam">
+                        <label for="platform-steam">Steam<span>740</span></label>
+                    </div>
+                </form>
+            </div>
+            <div class="device border-bottom">
+                <h3>Device</h3>
+                <form>
+                    <div class="reuse-div">
+                        <input type="checkbox" id="device-pc">
+                        <label for="device-pc">PC<span>677</span></label>
+                    </div>
+                </form>
+            </div>
+            <div class="type border-bottom">
+                <h3>Type</h3>
+                <form>
+                    <div class="reuse-div">
+                        <input type="checkbox" id="type-key">
+                        <label for="type-key">Key<span>740</span></label>
+                    </div>
+                </form>
+            </div>
+            <button class="open-dialog-box need-more-filters">Need more filters? Let us know.</button>
+        </div>
+        <div class="right-grid-item">
+            <a href="../../404.html" class="card">
+                <img src="../../images/gift-cards/bookworm-online.avif" alt="Bookworm Online $50 Giftcard">
+                <div class="column">
+                    <div class="header">
+                        <h3>Bookworm Online</h3>
+                        <span>$50.00<span>
+                    </div>
+                    <div class="info">
+                        <p>Platform: <span>Placeholder</span></p>
+                        <p>Type: <span>Placeholder</span></p>
+                        <p>Region: <span>Placeholder</span></p>
+                    </div>
+                    <p class="activate"><i class="fa-solid fa-check"></i> Can activate in: United States</p>
+                    <div class="footer">
+                        <p>Sponsored <i class="fa-solid fa-circle-info"></i></p>
+                        <button class="open-dialog-box add-to-wishlist" aria-label="add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </a>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <div class="dialog-sorry-msg-box">
+      <div class="dialog-shell">
+        <div class="dialog">
+          <img src="../../images/plus/sad-emoji.gif" width="120" height="120" alt="">
+          <h2>Sorry! Not Available Yet.</h2>
+          <p>Welp, that didn't go anywhere. Let's go back.</p>
+          <button class="close-dialog"><i class="fa-solid fa-arrow-left"></i> Go back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../javascript/global/header.js"></script>
+    <script src="../../javascript/global/footer.js"></script>
+    <script src="../../javascript/global/header-mobile-menu.js"></script>
+    <script src="../../javascript/global/form-category__listing.js"></script>
+    <script src="../../javascript/global/mobile-arrow-control.js"></script>
+    <script src="../../javascript/global/dialog-sorry-msg-box.js" defer></script>
+    <script src="../../javascript/pages/gift-card-show-more-less.js" defer></script>
+  </body>
+
+</html>

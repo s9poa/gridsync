@@ -1,0 +1,178 @@
+main.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 1rem;
+}
+main .title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    padding-block: 2rem;
+}
+main .title-section h2 {
+    font-size: 2rem;
+}
+main .title-section label {
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+main .grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+main .left-grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-right: 1px solid hsl(0, 0%, 90%);
+    padding-right: 2rem;
+}
+main .left-grid-item .categories button:not(.show-more-less), main .left-grid-item .reuse-div label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    position: relative;
+    transition: padding-inline .2s ease-in-out;
+    height: 2rem;
+    font-size: 1rem;
+
+    &:hover {
+        padding-inline: .5rem;
+    }
+}
+main .left-grid-item .show-more-less {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    color: blue;
+    font-size: .8rem;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+main .left-grid-item .show-less-a, main .left-grid-item .show-less-b {
+    display: none;
+}
+main .left-grid-item .show-more-less i {
+    color: inherit;
+    font-size: .6rem;
+}
+main .left-grid-item .categories button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background: hsla(217, 21%, 12%, 1);
+    transition: width .2s ease-in-out;
+}
+main .left-grid-item .categories button:hover::before {
+    width: 100%;
+}
+main .left-grid-item span {
+    opacity: .7;
+}
+main .left-grid-item .reuse-div {
+    display: flex;
+    align-items: center;
+}
+main .left-grid-item .reuse-div label {
+    padding-inline: .5rem;
+}
+main .left-grid-item .border-bottom {
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    padding-bottom: .5rem;
+}
+main .left-grid-item .need-more-filters {
+    color: blue;
+    font-size: .8rem;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+main .right-grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-column: span 2;
+}
+main .right-grid-item .card {
+    display: flex;
+    border-radius: 20px;
+    background: hsl(0, 0%, 98%);
+    transition: box-shadow .2s ease-in-out;
+    border: 1px solid hsl(0, 0%, 90%);
+
+    &:hover {
+        box-shadow: var(--box-shadow);
+    }
+}
+main .right-grid-item .card .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+main .right-grid-item .card .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+main .right-grid-item .card .header span {
+    font-weight: 700;
+    font-size: 2rem;
+}
+main .right-grid-item .card .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+main .right-grid-item .card .info p {
+    padding: .25rem 1rem;
+    border-radius: 100vw;
+    font-weight: 700;
+    background: rgba(0,0,0,.1);
+}
+main .right-grid-item .card .info p span {
+    font-weight: 400;
+}
+main .right-grid-item .card .activate, main .right-grid-item .card .activate i {
+    color: green;
+}
+main .right-grid-item .card .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .right-grid-item .card .footer p {
+    text-transform: uppercase;
+    opacity: .75;
+}
+main .right-grid-item .card .footer .add-to-wishlist i {
+    min-width: 2rem;
+    min-height: 2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    background:hsl(201, 40%, 31%);
+    color: #fff;
+    align-content: center;
+}
+main .right-grid-item .card img {
+    height: 15rem;
+    border-radius: 20px;
+}
