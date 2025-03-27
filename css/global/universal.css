@@ -885,7 +885,48 @@ footer .marquee__content > * {
     }
   }
 
-  
+.subscribe-banner {
+    background: #000;
+    color: #fff;
+}
+.subscribe-banner *:not(input) {
+    color: inherit;
+}
+.subscribe-banner .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem 1rem;
+}
+.subscribe-banner p {
+    max-width: 60ch;
+}
+.subscribe-banner form {
+    display: flex;
+    position: relative;
+    height: 3rem;
+    max-width: 20rem;
+    width: 100%;
+}
+.subscribe-banner form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+.subscribe-banner form input {
+    padding-inline: .5rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    flex-grow: 1;
+}
+.subscribe-banner form button {
+    background: var(--blue);
+    padding-inline: 1rem;
+    border-radius: 0 100vw 100vw 0;
+}
   
 
 /*---- Scrollbar ----*/
@@ -1000,6 +1041,22 @@ footer .marquee__content > * {
     header {
         height: 4.5rem;
     }
+    .mini-card-grid, .showcasing-card-grid {
+        display: flex;
+        overflow: auto;
+    }
+    .mini-card-grid .mini-card {
+        min-width: 70%;
+    }
+    .showcasing-card-grid .showcasing-card {
+        min-width: 70%;
+    }
+    main .hero {
+        gap: 1rem;
+    }
+    .previous-next-container {
+        display: flex;
+    }
 }
 @media (min-width: 900px) {
     header .menu-popup {
@@ -1021,22 +1078,13 @@ footer .marquee__content > * {
         justify-content: flex-start;
     }
 }
-@media (max-width: 900px) {
-    .mini-card-grid, .showcasing-card-grid {
-        display: flex;
-        overflow: auto;
+@media(max-width: 600px) {
+    .subscribe-banner .wrapper {
+        justify-content: center;
     }
-    .mini-card-grid .mini-card {
-        min-width: 70%;
-    }
-    .showcasing-card-grid .showcasing-card {
-        min-width: 70%;
-    }
-    main .hero {
-        gap: 1rem;
-    }
-    .previous-next-container {
-        display: flex;
+    .subscribe-banner p, .subscribe-banner h2 {
+        text-align: center;
+        margin-inline: auto;
     }
 }
 @media (max-width: 480px) {

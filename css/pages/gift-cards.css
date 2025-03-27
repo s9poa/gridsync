@@ -7,6 +7,8 @@ main.wrapper {
 main .title-section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
     border-bottom: 1px solid hsl(0, 0%, 90%);
     padding-block: 2rem;
@@ -23,6 +25,7 @@ main .grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 main .left-grid-item {
     display: flex;
@@ -30,6 +33,9 @@ main .left-grid-item {
     gap: 2rem;
     border-right: 1px solid hsl(0, 0%, 90%);
     padding-right: 2rem;
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
 }
 main .left-grid-item .categories button:not(.show-more-less), main .left-grid-item .reuse-div label {
     display: flex;
@@ -103,26 +109,42 @@ main .left-grid-item .need-more-filters {
     }
 }
 main .right-grid-item {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    --grid-min-col-size: 275px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-col-size), 100%), 1fr));
+    gap: 2rem 1rem; 
+    height: fit-content;
     grid-column: span 2;
 }
 main .right-grid-item .card {
     display: flex;
     border-radius: 20px;
     background: hsl(0, 0%, 98%);
-    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
     border: 1px solid hsl(0, 0%, 90%);
+    flex-direction: column;
+    position: relative;
 
     &:hover {
         box-shadow: var(--box-shadow);
+        transform: translateY(-10px);
     }
+}
+main .right-grid-item .card a {
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 main .right-grid-item .card .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     padding: 1rem;
 }
@@ -130,12 +152,15 @@ main .right-grid-item .card .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
     width: 100%;
     height: fit-content;
 }
 main .right-grid-item .card .header span {
     font-weight: 700;
     font-size: 2rem;
+    line-height: 1;
 }
 main .right-grid-item .card .info {
     display: flex;
@@ -163,6 +188,9 @@ main .right-grid-item .card .footer p {
     text-transform: uppercase;
     opacity: .75;
 }
+main .right-grid-item .card .footer .add-to-wishlist {
+    z-index: 2;
+}
 main .right-grid-item .card .footer .add-to-wishlist i {
     min-width: 2rem;
     min-height: 2rem;
@@ -171,8 +199,31 @@ main .right-grid-item .card .footer .add-to-wishlist i {
     background:hsl(201, 40%, 31%);
     color: #fff;
     align-content: center;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+        background:hsl(201, 40%, 20%);
+    }
 }
 main .right-grid-item .card img {
     height: 15rem;
+    object-fit: cover;
+    object-position: top;
     border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+    main .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    main .left-grid-item {
+        position: static;
+    }
+    main .right-grid-item {
+        grid-column: span 1;
+    }
+    main .left-grid-item {
+        border-right: none;
+        padding-right: 0;
+    }
 }
