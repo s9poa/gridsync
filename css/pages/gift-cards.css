@@ -37,6 +37,11 @@ main .left-grid-item {
     position: sticky;
     top: 1rem;
 }
+main .left-grid-item .categories button:not(.show-more-less) {
+    &:hover {
+        background: hsl(0, 0%, 95%);
+    }
+}
 main .left-grid-item .categories button:not(.show-more-less), main .left-grid-item .reuse-div label {
     display: flex;
     justify-content: space-between;
@@ -44,7 +49,7 @@ main .left-grid-item .categories button:not(.show-more-less), main .left-grid-it
     width: 100%;
     font-weight: 500;
     position: relative;
-    transition: padding-inline .2s ease-in-out;
+    transition: padding-inline .2s ease-in-out, background .2s ease-in-out;
     height: 2rem;
     font-size: 1rem;
 
@@ -71,19 +76,6 @@ main .left-grid-item .show-less-a, main .left-grid-item .show-less-b {
 main .left-grid-item .show-more-less i {
     color: inherit;
     font-size: .6rem;
-}
-main .left-grid-item .categories button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 0%;
-    background: hsla(217, 21%, 12%, 1);
-    transition: width .2s ease-in-out;
-}
-main .left-grid-item .categories button:hover::before {
-    width: 100%;
 }
 main .left-grid-item span {
     opacity: .7;
