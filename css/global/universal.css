@@ -284,7 +284,7 @@ header .header__top .form-category__listing {
     font-size: .85rem;
     box-shadow: var(--box-shadow);
     display: none;
-    z-index: 2;
+    z-index: 999;
 }
 header .header__top .form-category__listing * {
     color: inherit;
