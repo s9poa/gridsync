@@ -35,7 +35,7 @@ main .left-grid-item {
     padding-right: 2rem;
     height: fit-content;
     position: sticky;
-    top: 1rem;
+    top: 2rem;
 }
 main .left-grid-item .categories button:not(.show-more-less) {
     &:hover {
@@ -197,11 +197,12 @@ main .right-grid-item .card .footer .add-to-wishlist i {
         background:hsl(201, 40%, 20%);
     }
 }
-main .right-grid-item .card img {
+main .right-grid-item .card img, main .right-grid-item .placeholder-img {
     height: 15rem;
     object-fit: cover;
     object-position: top;
     border-radius: 20px;
+    border: 2px dashed gray;
 }
 
 @media (max-width: 1000px) {

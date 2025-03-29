@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
               </div>
             </div>
             <nav class="mobile-links__grouping">
-              <a href="./404.html">Best Sellers</a>
+              <a href="./directory/pages/best-sellers.html">Best Sellers</a>
               <a href="./directory/pages/gift-cards.html">Gift Cards</a>
               <a href="./directory/pages/random-keys.html">Random Keys</a>
               <a href="./404.html">Software</a>
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
         <!-- Header Bottom Section -->
         <nav class="header__bottom">
-          <a href="./404.html">Best Sellers</a>
+          <a href="./directory/pages/best-sellers.html">Best Sellers</a>
           <a href="./directory/pages/gift-cards.html">Gift Cards</a>
           <a href="./directory/pages/random-keys.html">Random Keys</a>
           <a href="./directory/pages/gridsync-plus.html" class="cta">Save more with GridSync Plus</a>

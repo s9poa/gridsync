@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="left-wrapper">
             <nav>
               <h2><i class="fa-solid fa-list"></i> Categories</h2>
-              <a href="./404.html">Best Sellers</a>
+              <a href="./directory/pages/best-sellers.html">Best Sellers</a>
               <a href="./404.html">Steam Gift Cards</a>
               <a href="./404.html">Random Keys</a>
               <a href="./404.html">Software</a>
