@@ -1,0 +1,39 @@
+main .landing-page {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem 1rem;
+}
+main .landing-page img {
+    width: 100%;
+    height: auto;
+}
+main .landing-page > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .landing-page * {
+    text-align: center;
+}
+main .landing-page h2 {
+    font-size: 2rem;
+}
+main .landing-page p {
+    font-size: 1.2rem;
+}
+main .landing-page a {
+    background: var(--blue);
+    color: #fff;
+    padding-inline: 2rem;
+    height: 3rem;
+    align-content: center;
+    border-radius: 100vw;
+    margin-top: 2rem;
+}
+
+@media (max-width: 740px) {
+    main .landing-page {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <nav>
               <h2><i class="fa-solid fa-list"></i> Categories</h2>
               <a href="./directory/pages/best-sellers.html">Best Sellers</a>
-              <a href="./404.html">Steam Gift Cards</a>
-              <a href="./404.html">Random Keys</a>
+              <a href="./directory/pages/gift-cards.html">Gift Cards</a>
+              <a href="./directory/pages/random-keys.html">Random Keys</a>
               <a href="./404.html">Software</a>
               <a href="./404.html">Upcoming Games</a>
               <a href="./404.html">Trending Categories</a>
