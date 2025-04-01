@@ -172,8 +172,18 @@ main .payment-methods * {
 main .payment-methods .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2rem 1rem;
     gap: 2rem 1rem;
+    width: 100%;
+}
+main .payment-methods .flex-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    flex-grow: 2;
 }
 main .payment-methods .title, main .payment-methods .more {
     opacity: .5;
@@ -184,53 +194,32 @@ main .payment-methods .title, main .payment-methods .more {
 main .payment-methods .item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .25rem;
-    opacity: .5;
     width: max-content;
+    background: rgba(255,255,255,.1);
+    padding: .5rem 1rem;
+    border-radius: 100vw;
+    flex-grow: 2;
+}
+main .payment-methods .item:nth-child(1) > * {
+    color: hsl(227, 100%, 77%);
+}
+main .payment-methods .item:nth-child(2) > * {
+    color: hsl(34, 89%, 59%);
+}
+main .payment-methods .item:nth-child(3) > * {
+    color: hsl(147, 96%, 80%);
+}
+main .payment-methods .item:nth-child(4) > * {
+    color: hsl(208, 92%, 75%);
 }
 main .payment-methods .item span {
-    font-weight: 900;
+    font-weight: 700;
 }
 main .payment-methods .item i {
     font-size: 1.5rem;
 }
-main .payment-methods .marquee {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 8rem;
-    max-width: 100%;
-    width: 100%;
-}
-main .payment-methods .marquee::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(90deg, rgba(0,0,0,1), transparent, transparent, rgba(0,0,0,1));
-    z-index: 2;
-  }
-  main .payment-methods .marquee__content {
-    display: flex;
-    justify-content: space-between;
-    flex: 0 0 100%;
-    gap: 8rem;
-    animation: scrollpayment 20s linear infinite;
-  }
-  main .payment-methods .marquee__content span {
-    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-  }
-  @keyframes scrollpayment {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 8rem));
-    }
-  }
 
 @media (max-width: 900px) {
     main .banner {

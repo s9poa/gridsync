@@ -1,28 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Determine the base path for GitHub Pages.
-  // If you are hosted as a project page (e.g. username.github.io/repositoryName),
-  // the repository name is the first segment of the pathname.
+  const projectFolder = "gridsync";
+  const pathSegments = window.location.pathname.split('/').filter(seg => seg !== "");
+  const folderIndex = pathSegments.findIndex(seg => seg === projectFolder);
   let basePath = "";
-  if (window.location.hostname.includes("github.io")) {
-    const pathParts = window.location.pathname.split('/');
-    if (pathParts.length > 1 && pathParts[1] !== "") {
-      basePath = "/" + pathParts[1];
-    }
+  if (folderIndex !== -1) {
+    basePath = "/" + pathSegments.slice(0, folderIndex + 1).join('/');
   }
-
-  // Find the container where the header should be injected.
   var headerContainer = document.getElementById('header');
   if (headerContainer) {
     var headerHTML = `
       <div class="wrapper">
-        <!-- Header Top Section -->
         <div class="header__top">
           <h1><a href="./index.html" class="logo">Grid<span>Sync</span></a></h1>
           <form class="desktop-form">
             <label for="desktop-search" class="visually-hidden">Search</label>
             <input type="text" placeholder="What are you looking for?" required id="desktop-search">
             <div class="connector">
-              <!-- Form Category - Desktop View -->
               <div class="form-category">
                 <button type="button" class="selected-category">
                   All categories <i class="fa-solid fa-chevron-down"></i>
@@ -49,10 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </form>
           <nav class="desktop-nav">
-            <a href="./404.html" aria-label="wishlist"><i class="fa-solid fa-heart"></i></a>
-            <a href="./404.html" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./directory/pages/wishlist.html" aria-label="wishlist"><i class="fa-solid fa-heart"></i></a>
+            <a href="./directory/pages/cart.html" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i></a>
           </nav>
-          <!-- Header Top Section - Mobile View -->
           <button class="mobile-menu" aria-label="menu">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -64,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
               </button>
             </div>
             <nav class="mobile-nav">
-              <a href="./404.html" aria-label="wishlist"><i class="fa-solid fa-heart"></i></a>
-              <a href="./404.html" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./directory/pages/wishlist.html" aria-label="wishlist"><i class="fa-solid fa-heart"></i></a>
+              <a href="./directory/pages/cart.html" aria-label="cart"><i class="fa-solid fa-cart-shopping"></i></a>
             </nav>
             <form class="mobile-form">
               <div class="mobile-form__row">
@@ -77,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </div>
-              <!-- Form Category - Mobile View -->
               <div class="form-category">
                 <button type="button" class="selected-category">
                   All categories <i class="fa-solid fa-chevron-down"></i>
@@ -110,24 +101,21 @@ document.addEventListener("DOMContentLoaded", function() {
             </nav>
           </div>
         </div>
-        <!-- Header Bottom Section -->
         <nav class="header__bottom">
           <a href="./directory/pages/best-sellers.html">Best Sellers</a>
           <a href="./directory/pages/gift-cards.html">Gift Cards</a>
           <a href="./directory/pages/random-keys.html">Random Keys</a>
           <a href="./directory/pages/gridsync-plus.html" class="cta">Save more with GridSync Plus</a>
         </nav>
-      `;
+      </div>
+    `;
     headerContainer.innerHTML = headerHTML;
   }
-
-  // Update links starting with "./" to use the absolute path with the base path.
-  var anchors = document.querySelectorAll("header a");
-  for (var i = 0; i < anchors.length; i++) {
-    var href = anchors[i].getAttribute("href");
-    if (href && href.indexOf("./") === 0) {
-      // Prepend the basePath to the link
-      anchors[i].setAttribute("href", basePath + "/" + href.substring(2));
+  var anchors = headerContainer.querySelectorAll("a");
+  anchors.forEach(anchor => {
+    const href = anchor.getAttribute("href");
+    if (href && href.startsWith("./")) {
+      anchor.setAttribute("href", basePath + "/" + href.slice(2));
     }
-  }
+  });
 });

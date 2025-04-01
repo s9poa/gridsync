@@ -1,0 +1,107 @@
+main .hero.wrapper {
+    padding: 2rem 1rem;
+}
+main .hero .title {
+    font-size: 2rem;
+}
+main .hero img {
+    max-width: 15.625rem;
+    width: 100%;
+    height: auto;
+}
+main .hero .content {
+    display: grid;
+    place-items: center;
+    padding-block: 5rem;
+    text-align: center;
+}
+main .hero .content > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+main .hero .content button {
+    height: 3rem;
+    padding-inline: 2rem;
+    border-radius: 100vw;
+    transition: background .2s ease-in-out, color .2s ease-in-out, filter .2s ease-in-out;
+}
+main .hero .content button:nth-child(1) {
+    border: 1px solid var(--blue);
+
+    &:hover {
+        background: var(--blue);
+        color: #fff;
+    }
+}
+main .hero .content button:nth-child(2) {
+    background: var(--blue);
+    color: #fff;
+
+    &:hover {
+        filter:saturate(.8)
+    }
+}
+
+/* Payment section */
+main .payment-methods {
+    background: #000;
+}
+main .payment-methods * {
+    color: #fff;
+    pointer-events: none;
+    font-size: 1rem;
+}
+main .payment-methods .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem 1rem;
+    width: 100%;
+}
+main .payment-methods .flex-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    flex-grow: 2;
+}
+main .payment-methods .title, main .payment-methods .more {
+    opacity: .5;
+    font-weight: 400;
+    font-family: var(--assistant);
+    min-width: max-content;
+}
+main .payment-methods .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    width: max-content;
+    background: rgba(255,255,255,.1);
+    padding: .5rem 1rem;
+    border-radius: 100vw;
+    flex-grow: 2;
+}
+main .payment-methods .item:nth-child(1) > * {
+    color: hsl(227, 100%, 77%);
+}
+main .payment-methods .item:nth-child(2) > * {
+    color: hsl(34, 89%, 59%);
+}
+main .payment-methods .item:nth-child(3) > * {
+    color: hsl(147, 96%, 80%);
+}
+main .payment-methods .item:nth-child(4) > * {
+    color: hsl(208, 92%, 75%);
+}
+main .payment-methods .item span {
+    font-weight: 700;
+}
+main .payment-methods .item i {
+    font-size: 1.5rem;
+}
+/*  */

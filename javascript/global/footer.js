@@ -1,16 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Determine the base path for GitHub Pages.
-  // If you are hosted as a project page (e.g. username.github.io/repositoryName),
-  // the repository name is the first segment of the pathname.
+  const projectFolder = "gridsync";
+  const pathSegments = window.location.pathname.split('/').filter(seg => seg !== "");
+  const folderIndex = pathSegments.findIndex(seg => seg === projectFolder);
   let basePath = "";
-  if (window.location.hostname.includes("github.io")) {
-    const pathParts = window.location.pathname.split('/');
-    if (pathParts.length > 1 && pathParts[1] !== "") {
-      basePath = "/" + pathParts[1];
-    }
+  if (folderIndex !== -1) {
+    basePath = "/" + pathSegments.slice(0, folderIndex + 1).join('/');
   }
-
-  // Find the container where the footer should be injected.
   var footerContainer = document.getElementById("footer");
   if (footerContainer) {
     var footerHTML = `
@@ -53,9 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
         </div>
-
         <div class="divider"></div>
-
         <div class="bottom-footer wrapper">
           <h2>Built with ❤️ using:</h2>
           <div class="marquee">
@@ -75,14 +68,11 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     footerContainer.innerHTML = footerHTML;
   }
-
-  // Update links starting with "./" to use the absolute path with the base path.
-  var anchors = document.querySelectorAll("footer a");
-  for (var i = 0; i < anchors.length; i++) {
-    var href = anchors[i].getAttribute("href");
-    if (href && href.indexOf("./") === 0) {
-      // Prepend the basePath to the link
-      anchors[i].setAttribute("href", basePath + "/" + href.substring(2));
+  var anchors = footerContainer.querySelectorAll("a");
+  anchors.forEach(anchor => {
+    const href = anchor.getAttribute("href");
+    if (href && href.startsWith("./")) {
+      anchor.setAttribute("href", basePath + "/" + href.slice(2));
     }
-  }
+  });
 });

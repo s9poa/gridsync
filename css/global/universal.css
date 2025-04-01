@@ -928,9 +928,9 @@ footer .marquee__content > * {
     border-radius: 0 100vw 100vw 0;
 }
 
-main .card-section-title {
-    padding-inline: 1rem;
-}
+/* #cursor {
+    border: 1px solid red;
+} */
 
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {

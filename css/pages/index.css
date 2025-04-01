@@ -5,6 +5,16 @@ main .hero {
     flex-direction: column-reverse;
     gap: 0;
     padding: 0;
+    position: relative;
+}
+main .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #000, transparent);
 }
 /* Choose Your Platform section */
 main .choose-your-platform .wrapper.one {
