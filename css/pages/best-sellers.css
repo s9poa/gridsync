@@ -28,13 +28,16 @@ main .bg-bleed .mini-card {
     z-index: -999;
     animation: hover 2s linear infinite;
 }
+main .mini-card-container {
+    position: relative;
+}
 .bubble.one {
-    top: 15rem;
-    left: 20rem;
+    top: 0;
+    left: 2rem;
 }
 .bubble.two {
-    bottom: 15rem;
-    right: 20rem;
+    bottom: 0;
+    right: 2rem;
 }
 
 @keyframes hover {
@@ -43,5 +46,11 @@ main .bg-bleed .mini-card {
     }
     50% {
         transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 600px) {
+    .bubble {
+        display: none;
     }
 }
