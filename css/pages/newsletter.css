@@ -1,0 +1,118 @@
+main .hero {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    padding: 2rem 1rem;
+}
+main .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+main .hero h2 {
+    font-size: 2rem;
+}
+main .hero form {
+    display: flex;
+    gap: 2rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+main .hero form > div {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 100vw;
+    position: relative;
+}
+main .hero form > div > * {
+    height: 3rem;
+}
+main .hero form label {
+    position: absolute;
+    height: 1rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    pointer-events: none;
+}
+main .hero form i {
+    display: grid;
+    place-items: center;
+    min-width: 3rem;
+    border-radius: 100vw;
+    background: #eaeaea;
+    border: 3px solid #fff;
+}
+main .hero input {
+    flex-grow: 2;
+    border: none;
+    background: none;
+    padding-left: .5rem;
+
+    &:focus-visible {
+        outline: none
+    }
+}
+main .hero input:focus::placeholder {
+    color: #000;
+}
+main .hero button {
+    background: var(--blue);
+    color: #fff;
+    height: 3rem;
+    padding-inline: 2rem;
+    border-radius: 100vw;
+}
+
+@media (max-width: 700px) {
+    main .hero {
+        grid-template-columns: repeat(1,1fr);
+    }
+    main .hero .content {
+        padding-block: 2rem;
+        background: #000;
+    }
+    main .hero .content * {
+        z-index: 1;
+    }
+    main .hero .content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: calc(100% - 0);
+        width: 100vw;
+        height: 100%;
+        background: #000;
+        background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
+        background-size: 10px 10px;
+    }
+    main .hero .content * {
+        color: #fff;
+    }
+    main .hero form i  {
+        background: hsl(0, 0%, 20%);
+        border: 3px solid #000;
+    }
+    main .hero form > div {
+        border: 2px solid #fff
+    }
+    main .hero input:focus::placeholder {
+        color: #fff;
+    }
+    main .hero > img {
+        max-width: 25rem;
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+@media (max-width: 450px) {
+    main .hero form {
+        flex-wrap: wrap;
+    }
+    main .hero button {
+        flex-grow: 1;
+    }
+}
