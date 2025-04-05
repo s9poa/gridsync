@@ -928,10 +928,6 @@ footer .marquee__content > * {
     border-radius: 0 100vw 100vw 0;
 }
 
-/* #cursor {
-    border: 1px solid red;
-} */
-
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {
    display: none;

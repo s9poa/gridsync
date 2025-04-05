@@ -72,22 +72,17 @@ main .hero button {
         grid-template-columns: repeat(1,1fr);
     }
     main .hero .content {
-        padding-block: 2rem;
-        background: #000;
-    }
-    main .hero .content * {
-        z-index: 1;
-    }
-    main .hero .content::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: calc(100% - 0);
-        width: 100vw;
-        height: 100%;
+        padding: 2rem 1rem;
         background: #000;
         background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
         background-size: 10px 10px;
+        border-radius: 20px;
+    }
+    main .hero h2 {
+        font-size: 1.5rem;
+    }
+    main .hero .content * {
+        z-index: 1;
     }
     main .hero .content * {
         color: #fff;

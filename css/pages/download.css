@@ -83,20 +83,10 @@ main .hero .lc__footer .publishing-services i {
     main .hero .lc__header {
         background: #000;
         color: #fff;
-        padding-block: 2rem;
-        position: relative;
-    }
-    main .hero .lc__header::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: calc(100% - 0);
-        height: 100%;
-        width: 100vw;
-        background: #000;
-        z-index: 1;
+        padding: 2rem 1rem;
         background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
         background-size: 10px 10px;
+        border-radius: 20px;
     }
     main .hero .lc__header * {
         color: inherit;

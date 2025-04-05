@@ -1,9 +1,9 @@
-main.wrapper {
+main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-main.wrapper .hero {
+main .hero {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -30,6 +30,10 @@ main .hero .grid img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
+}
+main .hero .grid > .lc .img-placeholder:first-of-type {
+    margin-top: 0;
+    aspect-ratio: 1 / 1;
 }
 main .hero .grid > .lc .img-placeholder {
     flex-grow: 1;
@@ -175,33 +179,102 @@ main .hero .grid .rc > button {
 
 /* Sellers Section */
 main .sellers {
+    background: #000;
+    background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+main .sellers .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem 1rem;
-    position: relative;
-}
-main .sellers::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(100% - 0);
-    width: 100vw;
-    height: 100%;
-    background: #000;
-    z-index: -1;
-    background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
-    background-size: 10px 10px;
-}
-main .sellers::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(100% - 100vw);
-    width: 100vw;
-    height: 100%;
-    background: #000;
-    z-index: -1;
-    background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
-    background-size: 10px 10px;
 }
 main .sellers * {
     color: #fff;
+    z-index: 2;
+}
+main .sellers .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 5px;
+    gap: 2rem 1rem;
+}
+main .sellers .lc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main .sellers .img-placeholder {
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    position: relative;
+}
+main .sellers .img-placeholder > i {
+    background: #000;
+    min-width: 2rem;
+    max-width: 2rem;
+    min-height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+}
+main .sellers .img-placeholder::before {
+    content: 'Img';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: hsl(0,0%, 50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+main .sellers .lc > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .sellers .content > span {
+    text-transform: uppercase;
+    color: hsl(0,0%, 50%);
+}
+main .sellers .content > p.positive {
+    color: rgb(134, 250, 134);
+}
+main .sellers .content > p.negative {
+    color: rgb(255, 104, 104);
+}
+main .sellers .content > p > span {
+    font-weight: 900;
+}
+main .sellers .content > p > span:last-of-type {
+    color: hsl(0,0%, 50%);
+}
+main .sellers .content > p i {
+    color: inherit;
+}
+main .sellers .rc {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main .sellers .rc button {
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 5px;
+    background: var(--blue);
+}
+main .sellers .rc > span {
+    font-size: 2rem;
+    font-weight: 900;
 }
