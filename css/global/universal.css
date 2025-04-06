@@ -577,6 +577,7 @@ main .overflow-slider {
     padding-inline: 1rem;
     margin-bottom: 2rem;
     display: none;
+    z-index: 1;
 }
 .previous-next-container button {
     color: #fff;
