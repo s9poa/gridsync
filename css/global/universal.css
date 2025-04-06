@@ -527,48 +527,17 @@ header .header__bottom a.cta {
     width: 100%;
     margin-inline: auto;
 }
-
-.beastslayer-wild-hunt {
-    background-image: url("../../images/global/beastslayer-wild-hunt.avif");
+.resident-evil-2 {
+    background-image: url("../../images/global/resident-evil-2.avif");
 }
-.blades-of-the-fallen-sun {
-    background-image: url("../../images/global/blades-of-the-fallen-sun.avif");
+.fallout-new-vegas {
+    background-image: url("../../images/global/fallout-new-vegas.webp");
 }
-.best-rpg-games {
-    background-image: url("../../images/global/best-rpg-games.avif");
+.animal-crossing {
+    background-image: url("../../images/global/animal-crossing.webp");
 }
-.blockforge-realm-of-legends {
-    background-image: url("../../images/global/blockforge-realm-of-legends.avif");
-}
-.rise-of-the-infected {
-    background-image: url("../../images/global/rise-of-the-infected.avif");
-}
-.echoes-of-rust {
-    background-image: url("../../images/global/echoes-of-rust.avif");
-}
-.blade-of-the-ancients {
-    background-image: url("../../images/global/blade-of-the-ancients.avif");
-}
-.the-forgotten-gate {
-    background-image: url("../../images/global/the-forgotten-gate.webp");
-}
-.shadowborn {
-    background-image: url("../../images/global/shadowborn.avif");
-}
-.eclipse-requiem {
-    background-image: url("../../images/global/eclipse-requiem.avif");
-}
-.saga-of-the-fallen-gods {
-    background-image: url("../../images/global/saga-of-the-fallen-gods.avif");
-}
-.eclipse-warfront {
-    background-image: url("../../images/global/eclipse-warfront.avif");
-}
-.nocturnal-descent {
-    background-image: url("../../images/global/nocturnal-descent.avif");
-}
-.melody-quest {
-    background-image: url("../../images/global/melody-quest.avif");
+.titanfall-2 {
+    background-image: url("../../images/global/titanfall-2.webp");
 }
 
 .showcasing-card-grid {

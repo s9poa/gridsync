@@ -412,8 +412,8 @@ main .currently-trending-offers .item .content {
 }
 main .currently-trending-offers .item .img {
     height: 10rem;
-    width: 7.5rem;
-    background-position: center;
+    min-width: 7.5rem;
+    background-position: top;
     background-size: cover;
     border-radius: 10px;
 }

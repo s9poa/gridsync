@@ -202,7 +202,6 @@ main .right-grid-item .card img, main .right-grid-item .placeholder-img {
     object-fit: cover;
     object-position: top;
     border-radius: 20px;
-    border: 2px dashed gray;
 }
 
 @media (max-width: 1000px) {

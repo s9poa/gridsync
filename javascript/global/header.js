@@ -28,11 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="header-label__dash"></div>
                   </div>
                   <button class="option" type="button">Gaming</button>
-                  <button class="option" type="button">Software</button>
                   <button class="option" type="button">Gift cards</button>
-                  <button class="option" type="button">Subscriptions</button>
-                  <button class="option" type="button">E-Learning</button>
-                  <button class="option" type="button">Charity</button>
                   <button class="option" type="button">Mobile Games</button>
                 </div>
               </div>
@@ -76,11 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="form-category__listing">
                   <button class="default option" type="button">All categories</button>
                   <button class="option" type="button">Gaming</button>
-                  <button class="option" type="button">Software</button>
                   <button class="option" type="button">Gift cards</button>
-                  <button class="option" type="button">Subscriptions</button>
-                  <button class="option" type="button">E-Learning</button>
-                  <button class="option" type="button">Charity</button>
                   <button class="option" type="button">Mobile Games</button>
                 </div>
               </div>
@@ -96,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
               <a href="./directory/pages/best-sellers.html">Best Sellers</a>
               <a href="./directory/pages/gift-cards.html">Gift Cards</a>
               <a href="./directory/pages/random-keys.html">Random Keys</a>
-              <a href="./404.html">Software</a>
               <a href="./directory/pages/gridsync-plus.html" class="cta">Save more with GridSync Plus</a>
             </nav>
           </div>
