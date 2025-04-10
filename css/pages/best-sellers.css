@@ -16,7 +16,7 @@ main .bg-bleed * {
     color: #fff;
 }
 main .bg-bleed .mini-card {
-    border: 1px solid #fff;
+    border: 1px solid #333;
 }
 .bubble {
     position: absolute;
