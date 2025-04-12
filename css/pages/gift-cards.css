@@ -139,6 +139,7 @@ main .right-grid-item .card .column {
     gap: 1rem;
     width: 100%;
     padding: 1rem;
+    flex-grow: 1;
 }
 main .right-grid-item .card .header {
     display: flex;
