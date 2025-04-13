@@ -14,12 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="left-wrapper">
             <nav>
               <h2><i class="fa-solid fa-list"></i> Categories</h2>
-              <a href="./directory/pages/best-sellers.html">Best Sellers</a>
-              <a href="./directory/pages/gift-cards.html">Gift Cards</a>
-              <a href="./directory/pages/random-keys.html">Random Keys</a>
-              <a href="./404.html">Software</a>
-              <a href="./404.html">Upcoming Games</a>
-              <a href="./404.html">Trending Categories</a>
+              <a href="./directory/pages/best-sellers.html" title="Best Sellers">Best Sellers</a>
+              <a href="./directory/pages/gift-cards.html" title="Gift Cards">Gift Cards</a>
+              <a href="./directory/pages/random-keys.html" title="Random Keys">Random Keys</a>
+              <a href="./404.html" title="Upcoming Games">Upcoming Games</a>
+              <a href="./404.html" title="Trending Categories">Trending Categories</a>
             </nav>
             <nav>
               <h2><i class="fa-solid fa-layer-group"></i> Platform</h2>

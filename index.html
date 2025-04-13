@@ -204,7 +204,7 @@
                     <span class="discount">9% Discount</span>
                   </div>
                 </div>
-                <button class="add-to-cart" aria-label="add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="add-to-cart open-dialog-box" aria-label="add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
               </div>
             </div>
             <div class="currently-trending-offers">
@@ -270,13 +270,23 @@
 
      <div id="footer"></div>
 
-     <div id="cursor"></div>
+     <div class="dialog-sorry-msg-box">
+      <div class="dialog-shell">
+        <div class="dialog">
+          <img src="../../images/plus/sad-emoji.gif" width="120" height="120" alt="">
+          <h2>Sorry! Not Available Yet.</h2>
+          <p>Welp, that didn't go anywhere. Let's go back.</p>
+          <button class="close-dialog"><i class="fa-solid fa-arrow-left"></i> Go back</button>
+        </div>
+      </div>
+    </div>
 
     <script src="javascript/global/header.js"></script>
     <script src="javascript/global/footer.js"></script>
     <script src="javascript/global/header-mobile-menu.js"></script>
     <script src="javascript/global/mobile-arrow-control.js"></script>
     <script src="javascript/global/form-category__listing.js"></script>
+    <script src="javascript/global/dialog-sorry-msg-box.js" defer></script>
     <script src="javascript/pages/flash-deal-timer.js"></script>
   </body>
 

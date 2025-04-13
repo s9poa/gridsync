@@ -858,6 +858,9 @@ footer .marquee__content > * {
 .subscribe-banner {
     background: #000;
     color: #fff;
+    background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
+    background-size: 10px 10px;
+    color: #fff;
 }
 .subscribe-banner *:not(input) {
     color: inherit;
