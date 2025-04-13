@@ -47,6 +47,9 @@ main .hero .content button:nth-child(2) {
 /* Payment section */
 main .payment-methods {
     background: #000;
+    color: #fff;
+    background-image: radial-gradient(hsla(265, 98%, 75%, .1) 1px, transparent 1px);
+    background-size: 10px 10px;
 }
 main .payment-methods * {
     color: #fff;

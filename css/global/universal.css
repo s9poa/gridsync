@@ -898,6 +898,30 @@ footer .marquee__content > * {
     border-radius: 0 100vw 100vw 0;
 }
 
+.breadcrumb-nav {
+    background: hsl(0, 0%, 5%);
+}
+.breadcrumb-nav > div {
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem 1rem;
+    flex-wrap: wrap;
+}
+.breadcrumb-nav > div * {
+    color: hsl(0, 0%, 50%);
+}
+.breadcrumb-nav > div i {
+    font-size: .6rem;
+    pointer-events: none;
+}
+.breadcrumb-nav > div a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-nav > div .active {
+    color: #fff;
+}
+
 /*---- Scrollbar ----*/
 ::-webkit-scrollbar {
    display: none;
