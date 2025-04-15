@@ -1092,3 +1092,17 @@ footer .marquee__content > * {
         flex-grow: 1;
     }
 }
+@media(max-width: 480px) {
+    .showcasing-card, .mini-card {
+        height: 20rem;
+    }
+    main .hero::before {
+        display: none;
+    }
+    main .previous-next-container {
+        display: none !important;
+    }
+    main .overflow-slider {
+        padding: 1rem !important;
+    }
+}

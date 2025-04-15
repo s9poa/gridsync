@@ -237,6 +237,9 @@ main .payment-methods .item i {
         display: flex;
         overflow: auto;
     }
+    main .bento-grid {
+        gap: 1rem;
+    }
     main .mini-card-grid a {
         min-width: 70%;
     }
@@ -250,7 +253,6 @@ main .payment-methods .item i {
         display: flex;
     }
 }
-
 @media (max-width: 400px) {
     main .payment-methods .wrapper {
         flex-direction: column;

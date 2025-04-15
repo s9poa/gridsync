@@ -480,7 +480,7 @@ main .currently-trending-offers .item .content > div .pricing {
         display: none;
     }
     main .flash-deal .img {
-        height: 20rem;
+        height: 12.5rem;
     }
     main .currently-trending-offers .item {
         min-width: 400px;
@@ -492,13 +492,16 @@ main .currently-trending-offers .item .content > div .pricing {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
     main .flash-deal-section .wrapper {
         flex-direction: column;
     }
     main .flash-deal {
         width: auto;
         margin-right: 1rem;
+    }
+    main .flash-deal .img {
+        height: 25rem;
     }
     main .currently-trending-offers .grid {
         flex-direction: row;
@@ -523,6 +526,18 @@ main .currently-trending-offers .item .content > div .pricing {
 @media (max-width: 600px) {
     main .currently-trending-offers .item {
         min-width: 90%;
+    }
+}
+@media(max-width: 480px) {
+    main .flash-deal .current-price {
+        font-size: 2rem;
+    }
+    main .flash-deal .img {
+        height: 12.5rem;
+    }
+    main .flash-deal .ticker {
+        height: 3rem;
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 410px) {

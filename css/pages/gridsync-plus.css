@@ -253,3 +253,8 @@ main .membership-card .membership-btn {
         min-width: 90%;
     }
 }
+@media (max-width: 480px) {
+    main .membership-grid {
+        gap: 1rem;
+    }
+}
