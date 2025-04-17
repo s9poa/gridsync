@@ -1,11 +1,10 @@
 main .hero {
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column-reverse;
     gap: 0;
-    padding: 0;
+    padding-bottom: 5rem;
     position: relative;
+    transition: padding .2s ease-in-out;
 }
 main .hero::before {
     content: '';
@@ -14,8 +13,58 @@ main .hero::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #000, transparent);
+    background-image: linear-gradient(to bottom, #000, transparent, transparent);
 }
+main .hero > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem;
+    text-align: center;
+    transition: padding .2s ease-in-out;
+}
+main .hero > .content * {
+    color: #fff;
+    transition: font-size .2s ease-in-out;
+}
+main .hero > .content h2 {
+    font-size: 4rem;
+    text-wrap: pretty;
+}
+main .hero > .content p {
+    font-size: 1.5rem;
+    color: hsl(0,0%, 75%);
+    text-wrap: pretty;
+}
+main .hero img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+main .hero .marquee {
+    display: flex;
+    gap: 1rem;
+    overflow: clip;
+    position: relative;
+}
+main .hero .marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    gap: 1rem;
+    animation: hero-scroll 60s linear infinite;
+}
+@keyframes hero-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
 /* Choose Your Platform section */
 main .choose-your-platform .wrapper.one {
     display: flex;
@@ -491,7 +540,20 @@ main .currently-trending-offers .item .content > div .pricing {
     }
 
 }
-
+@media (max-width: 920px) {
+    main .hero > .content h2 {
+        font-size: 3rem;
+    }
+    main .hero > .content p {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 900px) {
+    main .hero img {
+        width: 180px;
+        height: 260px;
+    }
+}
 @media (max-width: 800px) {
     main .flash-deal-section .wrapper {
         flex-direction: column;
@@ -523,6 +585,14 @@ main .currently-trending-offers .item .content > div .pricing {
         margin-top: 1rem;
     }
 }
+@media(max-width: 720px) {
+    main .hero > .content h2 {
+        font-size: 2rem;
+    }
+    main .hero > .content p {
+        font-size: 1.25rem;
+    }
+}
 @media (max-width: 600px) {
     main .currently-trending-offers .item {
         min-width: 90%;
@@ -538,6 +608,18 @@ main .currently-trending-offers .item .content > div .pricing {
     main .flash-deal .ticker {
         height: 3rem;
         font-size: 1.5rem;
+    }
+    main .hero > .content {
+        padding-block: 2rem;
+    }
+    main .hero {
+        padding-bottom: 2rem;
+    }
+    main .hero > .content h2 {
+        font-size: 1.5rem;
+    }
+    main .hero > .content p {
+        font-size: 1rem;
     }
 }
 @media (max-width: 410px) {
