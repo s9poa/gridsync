@@ -53,6 +53,8 @@ main .hero .marquee {
 }
 main .hero .marquee-content {
     display: flex;
+    justify-content: space-around;
+    width: 100vw;
     flex-shrink: 0;
     gap: 1rem;
     animation: hero-scroll 60s linear infinite;
