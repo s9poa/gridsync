@@ -381,11 +381,16 @@ main .flash-deal .add-to-cart {
     border-radius: 50%;
     outline: 2px solid #fff;
     outline-offset: -6px;
+    transition: background .2s ease-in-out, transform .2s ease-in-out;
 
     &:focus-visible {
         outline-offset: 3px;
         border-radius: 5px;
         animation: add-to-cart-focus 2s linear infinite;
+        background: hsl(121, 40%, 40%);
+    }
+    &:hover {
+        transform: translateY(-5px);
         background: hsl(121, 40%, 40%);
     }
 }
