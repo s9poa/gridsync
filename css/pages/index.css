@@ -255,6 +255,8 @@ main .flash-deal-section .flash-deal {
     background-image: linear-gradient(180deg, hsla(258, 76%, 93%, 1), hsla(258, 76%, 80%, 1), hsla(258, 75%, 62.5%, 1));
     color: #000;
     margin-left: 1rem;
+    height: fit-content;
+    margin-block: auto;
 }
 main .flash-deal-section .flash-deal * {
     color: inherit;
@@ -322,8 +324,13 @@ main .flash-deal .save-tab {
     font-size: 1.2rem;
 }
 main .flash-deal .title {
-    margin-right: auto;
     color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 main .flash-deal .left-available-container {
     color: #fff;
@@ -343,7 +350,7 @@ main .flash-deal .progress-bar {
 }
 main .flash-deal .footer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     color: #fff;
@@ -355,7 +362,7 @@ main .flash-deal .footer .row {
     gap: .5rem;
 }
 main .flash-deal .current-price {
-    font-size: 3rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 main .flash-deal .original-price {
@@ -365,41 +372,27 @@ main .flash-deal .original-price {
     opacity: .8;
 }
 main .flash-deal .discount {
-    background: #45a247;
+    background: rgba(0,0,0,.3);
     padding: .25rem 1rem;
     font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase;
     border-radius: 100vw;
+    user-select: none;
 }
 main .flash-deal .add-to-cart {
     width: 3rem;
     height: 3rem;
     display: grid;
     place-items: center;
-    background: hsl(121, 40%, 45%);
+    background: rgba(0,0,0,.3);
     border-radius: 50%;
-    outline: 2px solid #fff;
+    outline: 2px solid rgba(255,255,255, .3);
     outline-offset: -6px;
-    transition: background .2s ease-in-out, transform .2s ease-in-out;
+    transition: outline-color .175s ease-in-out;
 
-    &:focus-visible {
-        outline-offset: 3px;
-        border-radius: 5px;
-        animation: add-to-cart-focus 2s linear infinite;
-        background: hsl(121, 40%, 40%);
-    }
     &:hover {
-        transform: translateY(-5px);
-        background: hsl(121, 40%, 40%);
-    }
-}
-@keyframes add-to-cart-focus {
-    0% {
-        transform: translateY(0%);
-    }
-    50% {
-        transform: translateY(-5px);
+        outline: 2px solid rgba(255,255,255, 1);
     }
 }
 main .currently-trending-offers {
@@ -478,9 +471,12 @@ main .currently-trending-offers .item .content > div {
     flex-direction: column;
     justify-content: space-between;
 }
+main .currently-trending-offers .item .content > div h3 {
+    font-weight: 500;
+}
 main .currently-trending-offers .item .content > div .pricing {
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 
@@ -520,6 +516,7 @@ main .currently-trending-offers .item .content > div .pricing {
     main .flash-deal {
         height: fit-content;
         width: 100%;
+        margin-block: 0 auto !important;
     }
     main .currently-trending-offers .labels h2 {
         font-size: 1.5rem;

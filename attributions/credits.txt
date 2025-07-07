@@ -8,3 +8,6 @@ Font Awesome by Dave Gandy - http://fontawesome.io
 
 Audio Click
 Sound Effect by <a href="https://pixabay.com/users/matthewvakaliuk73627-48347364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=290204">Matthew Vakalyuk</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=290204">Pixabay</a>
+
+Favicon
+<a target="_blank" href="https://icons8.com/icon/Cr6FjSxWwuzT/apple-arcade">Game</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
