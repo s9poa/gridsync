@@ -1,1 +1,1 @@
-https://s9poa.github.io/gridsync/
+https://gridsync-website.vercel.app/
