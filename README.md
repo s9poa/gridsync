@@ -2,11 +2,11 @@
 This project simulates a game deals platform where users can browse and discover discounted video games.
 
 ## 🌐 Live Site  
-[Visit GridSync](https://your-live-link.com) <!-- Replace with your live site link -->
+[https://gridsync-website.vercel.app/](https://your-live-link.com](https://gridsync-website.vercel.app/)) <!-- Replace with your live site link -->
 
 ## 🎯 Purpose  
 GridSync was created to closely simulate the look, feel, and features of a modern game deals marketplace.  
-It focuses on clean design, responsive layouts, and interactive elements, providing a complete demonstration of front-end development skills.
+It focuses on clean design, responsive layouts, and interactive elements, providing a demonstration of front-end development skills.
 
 ## ✨ Highlights  
 • Fully responsive layout for desktop, tablet, and mobile  
@@ -15,9 +15,9 @@ It focuses on clean design, responsive layouts, and interactive elements, provid
 • Organized, maintainable code structure  
 
 ## 🛠 Tech Stack  
-- **HTML5** – Semantic and accessible structure  
-- **CSS3** – Custom styling and responsive design  
-- **JavaScript (Vanilla)** – Interactive functionality without dependencies  
+- **HTML5**
+- **CSS3**
+- **JavaScript**
 
 ## 📌 Possible Enhancements  
 - Integrate a live game deals API for real-time prices  
