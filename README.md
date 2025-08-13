@@ -1,33 +1,24 @@
 # GridSync  
-*A custom-built game deals platform showcasing responsive design, clean UI, and interactive functionality.*
+This project simulates a game deals platform where users can browse and discover discounted video games.
 
 ## 🌐 Live Site  
 [Visit GridSync](https://your-live-link.com) <!-- Replace with your live site link -->
 
-## 📜 Overview  
-GridSync is the first project under the GridSync brand — a fully hand-coded platform inspired by online game marketplaces.  
-It’s built to highlight front-end development skills through a responsive, accessible, and visually consistent experience.  
-Every component was developed from scratch using semantic HTML, modern CSS, and lightweight JavaScript.
+## 🎯 Purpose  
+GridSync was created to closely simulate the look, feel, and features of a modern game deals marketplace.  
+It focuses on clean design, responsive layouts, and interactive elements, providing a complete demonstration of front-end development skills.
 
 ## ✨ Highlights  
-- Fully responsive across desktop, tablet, and mobile  
-- Custom UI with consistent brand styling  
-- Smooth hover effects and interactive elements  
-- Lightweight, framework-free codebase
+• Fully responsive layout for desktop, tablet, and mobile  
+• Custom UI design with consistent branding  
+• Smooth hover effects and visual transitions  
+• Organized, maintainable code structure  
 
 ## 🛠 Tech Stack  
 - **HTML5** – Semantic and accessible structure  
-- **CSS3** – Custom styling and layout design  
+- **CSS3** – Custom styling and responsive design  
 - **JavaScript (Vanilla)** – Interactive functionality without dependencies  
 
-## 🎯 Purpose  
-This project was created to:  
-- Demonstrate strong front-end capabilities without relying on frameworks  
-- Build a functional, real-world style web interface from scratch  
-- Establish a clear, reusable brand design for future projects  
-
-## 📌 Future Plans  
-- Integrate live game deals API  
-- Add wishlist and account features  
-- Expand filtering and sorting options
-
+## 📌 Possible Enhancements  
+- Integrate a live game deals API for real-time prices  
+- Add wishlist or favorites system
