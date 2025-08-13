@@ -2,7 +2,7 @@
 This project simulates a game deals platform where users can browse and discover discounted video games.
 
 ## 🌐 Live Site  
-[https://gridsync-website.vercel.app/](https://your-live-link.com](https://gridsync-website.vercel.app/)) <!-- Replace with your live site link -->
+[https://gridsync-website.vercel.app/](https://gridsync-website.vercel.app/) <!-- Replace with your live site link -->
 
 ## 🎯 Purpose  
 GridSync was created to closely simulate the look, feel, and features of a modern game deals marketplace.  
