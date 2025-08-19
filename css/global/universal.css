@@ -66,6 +66,22 @@ button {
     background: none;
 }
 
+/* Keyframes */
+.animate-onView {
+    visibility: hidden;
+}
+@keyframes onView {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 .dialog-sorry-msg-box {
     position: fixed;
     top: 0;
