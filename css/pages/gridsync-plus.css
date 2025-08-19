@@ -9,6 +9,8 @@ main .plan-header-labels {
 main .section-title {
     max-width: 60ch;
     width: 100%;
+    text-wrap: balance;
+    padding: 0 2rem;
 }
 /* Memberships Section */
 main .membership {
