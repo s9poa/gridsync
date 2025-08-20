@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.05 } // triggers when 10% of element is visible
+    { threshold: 0.0005 } // triggers when 10% of element is visible
   );
 
   elements.forEach(el => {
